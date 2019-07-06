@@ -32,7 +32,6 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 10
-    // background: 'rgba(0,0,0, 0.5)'
   }
 }));
 

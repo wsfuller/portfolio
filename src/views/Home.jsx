@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   },
   heroIcon: {
     position: 'relative',
-    top: theme.pxToRem(8),
+    top: theme.pxToRem(16),
     margin: `0 ${theme.pxToRem(16)}`,
     color: theme.palette.primary.main
   }

@@ -43,11 +43,27 @@ const useStyles = makeStyles(theme => ({
   },
   subtitle: {
     ...theme.branding.subtitle
+  },
+  link: {
+    color: theme.colors.grayScale.white,
+    textDecoration: 'none'
   }
 }));
 
 const MainMenu = () => {
   const classes = useStyles();
+
+  const contactLink = (
+    <a className={classes.link} href="mailto:williamsfuller@williamsfuller.com">
+      Contact
+    </a>
+  );
+
+  const resumeLink = (
+    <a className={classes.link} href={Resume}>
+      Resume
+    </a>
+  );
 
   return (
     <div className={classes.root}>
@@ -88,10 +104,10 @@ const MainMenu = () => {
           <ListItemText primary="About Me" />
         </ListItem>
         <ListItem button>
-          <ListItemText primary={<a href="mailto:williamsfuller@williamsfuller.com">Contact</a>} />
+          <ListItemText primary={contactLink} />
         </ListItem>
         <ListItem button>
-          <ListItemText primary={<a href={Resume}>Resume</a>} />
+          <ListItemText primary={resumeLink} />
         </ListItem>
       </List>
     </div>
