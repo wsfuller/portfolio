@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Picture } from 'react-responsive-picture';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -55,6 +56,18 @@ const useStyles = makeStyles(theme => ({
 const MainMenu = () => {
   const classes = useStyles();
 
+  const projectsLink = (
+    <AnchorLink className={classes.link} href="#projects">
+      Projects
+    </AnchorLink>
+  );
+
+  const aboutMeLink = (
+    <AnchorLink className={classes.link} href="#about-me">
+      About Me
+    </AnchorLink>
+  );
+
   const contactLink = (
     <a className={classes.link} href="mailto:williamsfuller@williamsfuller.com">
       Contact
@@ -99,11 +112,11 @@ const MainMenu = () => {
       </div>
       <List component="nav">
         <Divider />
-        <ListItem button component={Link} to="#projects">
-          <ListItemText primary="Projects" />
+        <ListItem button>
+          <ListItemText primary={projectsLink} />
         </ListItem>
-        <ListItem button component={Link} to="#about-me">
-          <ListItemText primary="About Me" />
+        <ListItem button>
+          <ListItemText primary={aboutMeLink} />
         </ListItem>
         <ListItem button>
           <ListItemText primary={contactLink} />

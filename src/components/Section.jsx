@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Section = ({ children, title }) => {
+const Section = ({ children, title, id }) => {
   const classes = useStyles();
   const sectionTitle = (
     <Container className={classes.container}>
@@ -44,7 +44,7 @@ const Section = ({ children, title }) => {
   );
 
   return (
-    <section className={classes.section}>
+    <section id={id} className={classes.section}>
       {title ? sectionTitle : null}
       {children}
     </section>
@@ -53,11 +53,13 @@ const Section = ({ children, title }) => {
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
-  title: PropTypes.string
+  title: PropTypes.string,
+  id: PropTypes.string
 };
 
 Section.defaultProps = {
-  title: ''
+  title: '',
+  id: null
 };
 
 export default Section;

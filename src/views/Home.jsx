@@ -52,7 +52,7 @@ const Home = () => {
         altText="Colored bars signifying a view of code with syntax highlighting"
         content={heroContent}
       />
-      <Section title="Projects">
+      <Section id="projects" title="Projects">
         <Container>
           <ProjectsList />
         </Container>
