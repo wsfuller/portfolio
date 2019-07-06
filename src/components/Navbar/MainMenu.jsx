@@ -33,8 +33,10 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center'
   },
   introImage: {
-    maxWidth: 135,
+    width: theme.pxToRem(125),
+    height: theme.pxToRem(125),
     margin: `${theme.pxToRem(8)} auto`,
+    background: theme.colors.grayScale.grayOne,
     border: `${theme.pxToRem(5)} solid ${theme.colors.grayScale.grayOne}`,
     borderRadius: theme.borderRadius.rounded
   },
