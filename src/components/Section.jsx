@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   titleUnderline: {
     width: theme.pxToRem(80),
     height: theme.pxToRem(3),
-    margin: `${theme.pxToRem(16)} auto ${theme.pxToRem(24)}`,
+    margin: `${theme.pxToRem(16)} auto ${theme.pxToRem(40)}`,
     'background-color': theme.colors.primary.default
   }
 }));
