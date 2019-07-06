@@ -8,7 +8,7 @@ import { FaCoffee, FaCode } from 'react-icons/fa';
 import Hero from '../components/Hero';
 import HeroImage from '../assets/images/hero-backgrounds/code-background.svg';
 import Section from '../components/Section';
-import Projects from '../components/Projects';
+import ProjectsList from '../components/Projects/List';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -54,7 +54,7 @@ const Home = () => {
       />
       <Section title="Projects">
         <Container>
-          <Projects />
+          <ProjectsList />
         </Container>
       </Section>
     </main>
