@@ -9,6 +9,7 @@ import Hero from '../components/Hero';
 import HeroImage from '../assets/images/hero-backgrounds/code-background.svg';
 import Section from '../components/Section';
 import ProjectsList from '../components/Projects/List';
+import CompaniesList from '../components/Companies/List';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -55,6 +56,11 @@ const Home = () => {
       <Section id="projects" title="Projects">
         <Container>
           <ProjectsList />
+        </Container>
+      </Section>
+      <Section title="Worked For">
+        <Container>
+          <CompaniesList />
         </Container>
       </Section>
     </main>
