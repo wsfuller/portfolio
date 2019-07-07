@@ -9,7 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-import ProjectData from './list-data.json';
+import ProjectData from './list-data';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -29,7 +29,7 @@ const ProjectsList = () => {
 
   return (
     <Grid container spacing={2}>
-      {ProjectData.data.map(project => (
+      {ProjectData.map(project => (
         <Grid item key={project.id} xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardMedia
