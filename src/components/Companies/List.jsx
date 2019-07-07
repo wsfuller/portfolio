@@ -15,15 +15,11 @@ const useStyles = makeStyles(theme => ({
     }
   },
   company: {
-    maxWidth: theme.pxToRem(100),
-    height: theme.pxToRem(100),
+    maxWidth: theme.pxToRem(75),
+    height: theme.pxToRem(75),
     display: 'flex',
     alignItems: 'center',
-    margin: 'auto',
-    [theme.breakpoints.up('sm')]: {
-      maxWidth: theme.pxToRem(75),
-      height: theme.pxToRem(75)
-    }
+    margin: 'auto'
   }
 }));
 
