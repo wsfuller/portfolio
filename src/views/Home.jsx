@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import { FaCoffee, FaCode } from 'react-icons/fa';
 import Hero from '../components/Hero';
 import HeroImage from '../assets/images/hero-backgrounds/code-background.svg';
+import Section from '../components/Section';
+import ProjectsList from '../components/Projects/List';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -50,6 +52,11 @@ const Home = () => {
         altText="Colored bars signifying a view of code with syntax highlighting"
         content={heroContent}
       />
+      <Section id="projects" title="Projects">
+        <Container>
+          <ProjectsList />
+        </Container>
+      </Section>
     </main>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { Picture } from 'react-responsive-picture';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   subtitle: {
     ...theme.branding.subtitle
   },
-  link: {
+  linkText: {
     color: theme.colors.grayScale.white,
     textDecoration: 'none'
   }
@@ -55,17 +55,21 @@ const useStyles = makeStyles(theme => ({
 const MainMenu = () => {
   const classes = useStyles();
 
-  const contactLink = (
-    <a className={classes.link} href="mailto:williamsfuller@williamsfuller.com">
-      Contact
-    </a>
-  );
+  const projectsLink = React.forwardRef((props, ref) => (
+    <AnchorLink href="#projects" {...props} ref={ref} />
+  ));
 
-  const resumeLink = (
-    <a className={classes.link} href={Resume}>
-      Resume
-    </a>
-  );
+  const aboutMeLink = React.forwardRef((props, ref) => (
+    <AnchorLink href="#about-me" {...props} ref={ref} />
+  ));
+
+  const contactLink = React.forwardRef((props, ref) => (
+    // eslint-disable-next-line jsx-a11y/anchor-has-content
+    <a href="mailto:williamsfuller@williamsfuller.com" {...props} ref={ref} />
+  ));
+
+  // eslint-disable-next-line jsx-a11y/anchor-has-content
+  const resumeLink = React.forwardRef((props, ref) => <a href={Resume} {...props} ref={ref} />);
 
   return (
     <div className={classes.root}>
@@ -97,19 +101,19 @@ const MainMenu = () => {
           </IconButton>
         </div>
       </div>
+      <Divider />
       <List component="nav">
-        <Divider />
-        <ListItem button component={Link} to="#projects">
-          <ListItemText primary="Projects" />
+        <ListItem button component={projectsLink}>
+          <ListItemText className={classes.linkText} primary="Projects" />
         </ListItem>
-        <ListItem button component={Link} to="#about-me">
-          <ListItemText primary="About Me" />
+        <ListItem button component={aboutMeLink}>
+          <ListItemText className={classes.linkText} primary="About Me" />
         </ListItem>
-        <ListItem button>
-          <ListItemText primary={contactLink} />
+        <ListItem button component={contactLink}>
+          <ListItemText className={classes.linkText} primary="Contact" />
         </ListItem>
-        <ListItem button>
-          <ListItemText primary={resumeLink} />
+        <ListItem button component={resumeLink}>
+          <ListItemText className={classes.linkText} primary="Resume" />
         </ListItem>
       </List>
     </div>
