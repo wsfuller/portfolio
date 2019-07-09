@@ -130,9 +130,6 @@ const MainMenu = ({ location }) => {
       <Divider />
       <List component="nav">
         {renderScrollingOrAnchorLinks()}
-        <ListItem button component={aboutMeLink}>
-          <ListItemText className={classes.linkText} primary="About Me" />
-        </ListItem>
         <ListItem button component={contactLink}>
           <ListItemText className={classes.linkText} primary="Contact" />
         </ListItem>
