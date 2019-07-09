@@ -56,11 +56,11 @@ const MainMenu = () => {
   const classes = useStyles();
 
   const projectsLink = React.forwardRef((props, ref) => (
-    <AnchorLink href="#projects" {...props} ref={ref} />
+    <AnchorLink href="#projects" offset={() => 50} {...props} ref={ref} />
   ));
 
   const aboutMeLink = React.forwardRef((props, ref) => (
-    <AnchorLink href="#about-me" {...props} ref={ref} />
+    <AnchorLink href="#about-me" offset={() => 50} {...props} ref={ref} />
   ));
 
   const contactLink = React.forwardRef((props, ref) => (

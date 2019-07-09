@@ -17,6 +17,7 @@ const colors = {
     grayTwo: '#666666',
     grayThree: '#333333',
     grayFour: '#303030',
+    grayFive: '#212121',
     black: '#000000'
   }
 };
