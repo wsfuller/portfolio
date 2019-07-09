@@ -64,7 +64,7 @@ const Home = () => {
           <CompaniesList />
         </Container>
       </Section>
-      <Section title="About Me">
+      <Section id="about-me" title="About Me">
         <Container>
           <AboutMe />
         </Container>
