@@ -16,6 +16,7 @@ const colors = {
     grayOne: '#f4f4f4',
     grayTwo: '#666666',
     grayThree: '#333333',
+    grayFour: '#303030',
     black: '#000000'
   }
 };
@@ -53,8 +54,8 @@ const appTheme = {
     }
   },
   borderRadius: {
-    default: '.5rem',
-    minimal: '.25rem',
+    default: pxToRem(8),
+    small: pxToRem(4),
     rounded: '50%'
   },
   branding: {
