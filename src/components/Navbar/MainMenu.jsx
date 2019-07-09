@@ -96,7 +96,7 @@ const MainMenu = () => {
           >
             <FaLinkedinIn />
           </IconButton>
-          <IconButton href="https://www.freecodecamp.org/wsfuller" aria-label="Free Code Camp">
+          <IconButton href="https://www.freecodecamp.org/wsfuller" aria-label="freeCodeCamp">
             <FaFreeCodeCamp />
           </IconButton>
         </div>
