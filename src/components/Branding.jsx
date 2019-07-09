@@ -18,7 +18,8 @@ const useStyles = makeStyles(theme => ({
     height: theme.pxToRem(40),
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    color: theme.colors.grayScale.white
   },
   title: {
     fontSize: 20,
