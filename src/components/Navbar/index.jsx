@@ -14,7 +14,8 @@ import MainMenu from './MainMenu';
 const styles = theme => ({
   toolbar: {
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    background: theme.colors.grayScale.grayFive
   },
   menuButton: {
     marginRight: theme.spacing(2)
@@ -43,7 +44,7 @@ class Navbar extends Component {
 
     return (
       <Fragment>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar className={classes.toolbar}>
             <Branding />
             <IconButton
