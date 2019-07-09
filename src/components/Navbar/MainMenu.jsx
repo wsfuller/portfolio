@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import { Picture } from 'react-responsive-picture';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -52,7 +53,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const MainMenu = () => {
+const MainMenu = ({ location }) => {
   const classes = useStyles();
 
   const projectsLink = React.forwardRef((props, ref) => (
@@ -62,6 +63,31 @@ const MainMenu = () => {
   const aboutMeLink = React.forwardRef((props, ref) => (
     <AnchorLink href="#about-me" offset={() => 50} {...props} ref={ref} />
   ));
+
+  const renderScrollingOrAnchorLinks = () => {
+    if (location.pathname !== '/') {
+      return (
+        <Fragment>
+          <ListItem button component="a" href="/#projects">
+            <ListItemText className={classes.linkText} primary="Projects" />
+          </ListItem>
+          <ListItem button component="a" href="/#about-me">
+            <ListItemText className={classes.linkText} primary="About Me" />
+          </ListItem>
+        </Fragment>
+      );
+    }
+    return (
+      <Fragment>
+        <ListItem button component={projectsLink}>
+          <ListItemText className={classes.linkText} primary="Projects" />
+        </ListItem>
+        <ListItem button component={aboutMeLink}>
+          <ListItemText className={classes.linkText} primary="About Me" />
+        </ListItem>
+      </Fragment>
+    );
+  };
 
   const contactLink = React.forwardRef((props, ref) => (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
@@ -103,9 +129,7 @@ const MainMenu = () => {
       </div>
       <Divider />
       <List component="nav">
-        <ListItem button component={projectsLink}>
-          <ListItemText className={classes.linkText} primary="Projects" />
-        </ListItem>
+        {renderScrollingOrAnchorLinks()}
         <ListItem button component={aboutMeLink}>
           <ListItemText className={classes.linkText} primary="About Me" />
         </ListItem>
@@ -121,11 +145,14 @@ const MainMenu = () => {
 };
 
 MainMenu.propTypes = {
-  classes: PropTypes.shape({})
+  classes: PropTypes.shape({}),
+  location: PropTypes.shape({
+    pathname: PropTypes.string
+  }).isRequired
 };
 
 MainMenu.defaultProps = {
   classes: {}
 };
 
-export default MainMenu;
+export default withRouter(MainMenu);
