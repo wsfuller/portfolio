@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -16,6 +17,10 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     background: theme.colors.grayScale.grayFive
+  },
+  brandingLink: {
+    color: theme.colors.grayScale.white,
+    textDecoration: 'none'
   },
   menuButton: {
     marginRight: theme.spacing(2)
@@ -46,7 +51,9 @@ class Navbar extends Component {
       <Fragment>
         <AppBar position="fixed">
           <Toolbar className={classes.toolbar}>
-            <Branding />
+            <Link to="/" className={classes.brandingLink}>
+              <Branding />
+            </Link>
             <IconButton
               className={classes.menuButton}
               onClick={() => this.toggleDrawer()}
@@ -75,6 +82,7 @@ class Navbar extends Component {
 Navbar.propTypes = {
   classes: PropTypes.shape({
     toolbar: PropTypes.string,
+    brandkingLink: PropTypes.string,
     menuButton: PropTypes.string
   }).isRequired
 };
