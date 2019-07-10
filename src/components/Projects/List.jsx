@@ -55,7 +55,7 @@ const ProjectsList = () => {
               >
                 View Demo
               </Button>
-              <Button size="small" color="primary" href={`/projects/${project.Id}`}>
+              <Button size="small" color="primary" href={`/projects/${project.id}`}>
                 Learn More
               </Button>
             </CardActions>

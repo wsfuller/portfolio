@@ -2,7 +2,7 @@ const reactStarWars = require('../../assets/images/projects/react-star-wars/card
 const reactWeather = require('../../assets/images/projects/react-weather/card-logo.svg');
 const darkRemnantsPodcast = require('../../assets/images/projects/dark-remnants-podcast/card-logo.svg');
 const ghostJackEntertainment = require('../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
-const angularPokedex = require('../../assets/images/projects/angular-pokedex/card-logo.svg');
+// const angularPokedex = require('../../assets/images/projects/angular-pokedex/card-logo.svg');
 const movieFinder = require('../../assets/images/projects/movie-finder/card-logo.svg');
 const uWatch = require('../../assets/images/projects/uwatch/card-logo.svg');
 
@@ -36,13 +36,13 @@ module.exports = [
     image: ghostJackEntertainment,
     demoUrl: 'http://ghostjackent.com/'
   },
-  {
-    id: 'angular-pokedex',
-    title: 'Angular-Pokedex',
-    description: 'Angular 1 application powered by the Pokedex API',
-    image: angularPokedex,
-    demoUrl: 'https://www.williamsfuller.com/projects/angular-pokedex/'
-  },
+  // {
+  //   id: 'angular-pokedex',
+  //   title: 'Angular-Pokedex',
+  //   description: 'Angular 1 application powered by the Pokedex API',
+  //   image: angularPokedex,
+  //   demoUrl: 'https://www.williamsfuller.com/projects/angular-pokedex/'
+  // },
   {
     id: 'movie-finder',
     title: 'Movie Finder',
