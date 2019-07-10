@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     background: 'rgba(33,33,33, 0.8)'
   },
   heroImage: {
-    width: 1200,
+    width: theme.pxToRem(800),
     opacity: 0.8
   },
   responsiveImage: {
@@ -32,7 +32,9 @@ const useStyles = makeStyles(theme => ({
     maxWidth: theme.pxToRem(800),
     height: 'auto',
     display: 'block',
-    margin: 'auto'
+    margin: 'auto',
+    borderRadius: theme.borderRadius.default,
+    boxShadow: `0 ${theme.pxToRem(5)} ${theme.pxToRem(10)} 0 rgba(0,0,0,.5)`
   },
   about: {
     width: '70%',
@@ -52,8 +54,6 @@ const useStyles = makeStyles(theme => ({
 
 const ProjectProfile = ({ project }) => {
   const classes = useStyles();
-
-  console.log('project profile: ', project);
 
   const heroContent = (
     <div className={classes.overlay}>
