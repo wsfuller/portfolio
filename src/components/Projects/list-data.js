@@ -48,13 +48,13 @@ module.exports = [
     title: 'Movie Finder',
     description: 'Single page site using HTML, Sass, and jQuery to fetch data from themoviedb.org',
     image: movieFinder,
-    demoUrl: 'https://www.williamsfuller.com/projects/movieFinder/'
+    demoUrl: 'https://wsfuller.github.io/movieFinder/'
   },
   {
     id: 'uwatch',
     title: 'uWatch',
     description: 'Single page site using HTML, Sass, jQuery, and Bootstrap',
     image: uWatch,
-    demoUrl: 'https://www.williamsfuller.com/projects/uWatch/'
+    demoUrl: 'https://wsfuller.github.io/uWatch/'
   }
 ];

@@ -143,7 +143,7 @@ const GhostJackEntertainment = {
 
 const MovieFinder = {
   name: 'Movie Finder',
-  demoUrl: 'https://www.williamsfuller.com/projects/movieFinder/',
+  demoUrl: 'https://wsfuller.github.io/movieFinder/',
   releaseDate: 'Mid 2014',
   images: {
     hero: {
@@ -171,7 +171,7 @@ const MovieFinder = {
 
 const Uwatch = {
   name: 'uWatch',
-  demoUrl: 'https://www.williamsfuller.com/projects/uWatch/',
+  demoUrl: 'https://wsfuller.github.io/uWatch/',
   releaseDate: 'Late 2013',
   images: {
     hero: {
