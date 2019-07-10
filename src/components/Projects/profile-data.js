@@ -1,7 +1,13 @@
-const darkRemnantsPodcastHero = require('../../assets/images/projects/dark-remnants-podcast/hero.jpg');
-const reactWeatherHero = require('../../assets/images/projects/react-weather/hero.jpg');
+// Dark Remnants Podcast
+const darkRemnantsPodcastHeroBg = require('../../assets/images/projects/dark-remnants-podcast/hero-bg.jpg');
+const darkRemnantsPodcastHeroLogo = require('../../assets/images/projects/dark-remnants-podcast/hero-logo.svg');
+// React Weather
+const reactWeatherHeroBg = require('../../assets/images/projects/react-weather/hero-bg.jpg');
+const reactWeatherHeroLogo = require('../../assets/images/projects/react-weather/hero-logo.svg');
+const reactWeatherSnapshot = require('../../assets/images/projects/react-weather/snapshot.png');
+const reactWeatherSnapshot2x = require('../../assets/images/projects/react-weather/snapshot@2x.png');
 
-const reactStarWars = {};
+// const reactStarWars = {};
 
 const DarkRemnantsPodcast = {
   name: 'Dark Remnants',
@@ -9,8 +15,8 @@ const DarkRemnantsPodcast = {
   releaseDate: 'Late 2017',
   images: {
     hero: {
-      logo: 'assets/images/projects/react-weather/hero.jpg',
-      background: darkRemnantsPodcastHero
+      logo: darkRemnantsPodcastHeroLogo,
+      background: darkRemnantsPodcastHeroBg
     },
     snapShot: 'assets/images/projects/react-weather/hero.jpg',
     tools: [
@@ -34,10 +40,13 @@ const ReactWeather = {
   releaseDate: 'Late 2017',
   images: {
     hero: {
-      logo: 'assets/images/projects/react-weather/hero.jpg',
-      background: reactWeatherHero
+      logo: reactWeatherHeroLogo,
+      background: reactWeatherHeroBg
     },
-    snapShot: 'assets/images/projects/react-weather/hero.jpg',
+    snapShots: {
+      default: reactWeatherSnapshot,
+      at2x: reactWeatherSnapshot2x
+    },
     tools: [
       {
         icon: 'assets/images/icons/react.svg',
