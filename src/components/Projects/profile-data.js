@@ -87,7 +87,7 @@ const DarkRemnantsPodcast = {
 
 const ReactWeather = {
   name: 'ReactWeather',
-  demoUrl: 'http://williamsfuller.com/projects/react-weather',
+  demoUrl: 'https://wsf-react-weather.netlify.com/',
   releaseDate: 'Late 2017',
   images: {
     hero: {

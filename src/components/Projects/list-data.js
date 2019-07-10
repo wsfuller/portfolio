@@ -27,7 +27,7 @@ module.exports = [
     title: 'ReactWeather',
     description: 'React application using the OpenWeatherMap API to bring in weather information',
     image: reactWeather,
-    demoUrl: 'https://williamsfuller.com/projects/react-weather/'
+    demoUrl: 'https://wsf-react-weather.netlify.com/'
   },
   {
     id: 'ghost-jack-entertainment',
