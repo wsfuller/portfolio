@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 
 import Profile from '../components/Projects/Profile';
 import Projects from '../components/Projects/profile-data';
@@ -18,7 +18,10 @@ const ProjectProfile = ({ match }) => {
 
   const projectDetails = Projects[projectName];
 
-  return <Profile project={projectDetails} />;
+  if (projectDetails) {
+    return <Profile project={projectDetails} />;
+  }
+  return <Redirect to="/not-found" />;
 };
 
 ProjectProfile.propTypes = {
