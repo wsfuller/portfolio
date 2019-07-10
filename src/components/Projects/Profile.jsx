@@ -29,8 +29,24 @@ const useStyles = makeStyles(theme => ({
   },
   responsiveImage: {
     width: '100%',
+    maxWidth: theme.pxToRem(800),
     height: 'auto',
-    display: 'block'
+    display: 'block',
+    margin: 'auto'
+  },
+  about: {
+    width: '70%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: 'auto'
+  },
+  description: {
+    marginBottom: theme.pxToRem(24)
+  },
+  demoButton: {
+    marginTop: theme.pxToRem(24),
+    color: theme.colors.grayScale.white
   }
 }));
 
@@ -58,18 +74,44 @@ const ProjectProfile = ({ project }) => {
       />
       <Section title={project.name}>
         <Container>
-          <Grid container>
-            <Grid item xs={12} sm={6}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
               <Picture
                 className={classes.responsiveImage}
                 src={`${project.images.snapShots.at2x} 2x, ${project.images.snapShots.default} 1x`}
                 alt={`Screenshot of ${project.name} inside an illustration of a browser window`}
               />
             </Grid>
+            <Grid item xs={12} md={6}>
+              <div className={classes.about}>
+                <Typography variant="h5" align="center" gutterBottom>
+                  About
+                </Typography>
+                <Typography
+                  className={classes.description}
+                  variant="body1"
+                  align="justify"
+                  gutterBottom
+                >
+                  {/* // eslint-disable-next-line react/no-danger */}
+                  <span dangerouslySetInnerHTML={{ __html: project.description }} />
+                </Typography>
+                <Typography variant="body1" align="center">
+                  {`Released: ${project.releaseDate}`}
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  href={project.demoUrl}
+                  className={classes.demoButton}
+                >
+                  Demo
+                </Button>
+              </div>
+            </Grid>
           </Grid>
         </Container>
       </Section>
-      <h1>Profile page</h1>
     </Fragment>
   );
 };
@@ -77,6 +119,8 @@ const ProjectProfile = ({ project }) => {
 ProjectProfile.propTypes = {
   project: PropTypes.shape({
     name: PropTypes.string,
+    demoUrl: PropTypes.string,
+    releaseDate: PropTypes.string,
     images: PropTypes.shape({
       hero: PropTypes.shape({
         logo: PropTypes.string,
@@ -86,7 +130,8 @@ ProjectProfile.propTypes = {
         at2x: PropTypes.string,
         default: PropTypes.string
       })
-    })
+    }),
+    description: PropTypes.string
   }).isRequired
 };
 
