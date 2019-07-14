@@ -1,6 +1,7 @@
 const reactStarWars = require('../../assets/images/projects/react-star-wars/card-logo.svg');
-const reactWeather = require('../../assets/images/projects/react-weather/card-logo.svg');
+const resumeApi = require('../../assets/images/projects/resume-api/card-logo.svg');
 const darkRemnantsPodcast = require('../../assets/images/projects/dark-remnants-podcast/card-logo.svg');
+const reactWeather = require('../../assets/images/projects/react-weather/card-logo.svg');
 const ghostJackEntertainment = require('../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
 // const angularPokedex = require('../../assets/images/projects/angular-pokedex/card-logo.svg');
 const movieFinder = require('../../assets/images/projects/movie-finder/card-logo.svg');
@@ -14,6 +15,13 @@ module.exports = [
       'React + GraphQL + Apollo Client powered by the GraphCMS GraphQL Star Wars API wrapper',
     image: reactStarWars,
     demoUrl: 'https://react-star-wars.netlify.com/'
+  },
+  {
+    id: 'resume-api',
+    title: 'Resume API',
+    description: 'My Resume as an API using Node, Mongo, and Heroku ',
+    image: resumeApi,
+    demoUrl: 'https://wsf-resume-api.herokuapp.com/'
   },
   {
     id: 'dark-remnants-podcast',

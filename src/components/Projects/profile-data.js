@@ -3,6 +3,11 @@ const reactStarWarsHeroBg = require('../../assets/images/projects/react-star-war
 const reactStarWarsHeroLogo = require('../../assets/images/projects/react-star-wars/hero-logo.svg');
 const reactStarWarsSnapshot = require('../../assets/images/projects/react-star-wars/snapshot.jpg');
 const reactStarWarsSnapshot2x = require('../../assets/images/projects/react-star-wars/snapshot@2x.jpg');
+// React Star Wars
+const resumeApiHeroBg = require('../../assets/images/projects/resume-api/hero-bg.jpg');
+const resumeApiHeroLogo = require('../../assets/images/projects/resume-api/hero-logo.svg');
+const resumeApiSnapshot = require('../../assets/images/projects/resume-api/snapshot.jpg');
+const resumeApiSnapshot2x = require('../../assets/images/projects/resume-api/snapshot@2x.jpg');
 // Dark Remnants Podcast
 const darkRemnantsPodcastHeroBg = require('../../assets/images/projects/dark-remnants-podcast/hero-bg.jpg');
 const darkRemnantsPodcastHeroLogo = require('../../assets/images/projects/dark-remnants-podcast/hero-logo.svg');
@@ -55,6 +60,34 @@ const ReactStarWars = {
   },
   description:
     'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Orignally built with using the RESTful version of SWAPI this app quickly pivoted to theGraphCMS SWAPI GraphQL Port. <br /><br /> Along with using GraphQL this project also uses the latest version of Material-UI and JavaScript Style Sheets (JSS). To try to build toward a fully JavaScript driven application and modern techniques of component based applications.'
+};
+
+const ResumeApi = {
+  name: 'Resume API',
+  demoUrl: 'https://wsf-resume-api.herokuapp.com/',
+  releaseDate: 'Mid 2019',
+  images: {
+    hero: {
+      logo: resumeApiHeroLogo,
+      background: resumeApiHeroBg
+    },
+    snapShots: {
+      default: resumeApiSnapshot,
+      at2x: resumeApiSnapshot2x
+    },
+    tools: [
+      {
+        icon: 'assets/images/icons/react.svg',
+        name: 'React'
+      },
+      {
+        icon: 'assets/images/icons/redux.svg',
+        name: 'Redux'
+      }
+    ]
+  },
+  description:
+    'I wanted to create a fun and simple API using Node and mongoDB to step up my back end technology skills. I decided it would be fun to take my resume and make it into an API. In doing so I was able to leverage Node, Express, mLab, and Heroku to deploy an API that anyone can make GET requests to. The API includes endpoints for personal, technology, experience, and education information'
 };
 
 const DarkRemnantsPodcast = {
@@ -199,6 +232,7 @@ const Uwatch = {
 
 module.exports = {
   ReactStarWars,
+  ResumeApi,
   DarkRemnantsPodcast,
   ReactWeather,
   GhostJackEntertainment,
