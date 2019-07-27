@@ -92,7 +92,7 @@ const FetchDoggos = {
     ]
   },
   description:
-    'One day at the dog park playing with Remy, my Boston Terrier, I wondered if there was an API for dogs. To my surprise there was the DOG API from dog.ceo that would allow users to search for random dog images. <br/><br/>The goal of this project was to create a project working more with forms and experiement with a new framework, Semantic UI React.<br/><br/>FetchDoggos is built using React, Redux, Semantic UI React, Styled Components, GitHub, and Netlify.'
+    'One day at the dog park playing with Remy, my Boston Terrier, I wondered if there was an API for dogs. To my surprise there was the DOG API from dog.ceo that would allow users to search for random dog images. <br/><br/>The goal of this project was to create a project working more with forms and experiment with a new framework, Semantic UI React.<br/><br/>FetchDoggos is built using React, Redux, Semantic UI React, Styled Components, GitHub, and Netlify.'
 };
 
 const ResumeApi = {
