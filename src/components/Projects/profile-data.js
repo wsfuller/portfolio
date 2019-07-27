@@ -3,7 +3,12 @@ const reactStarWarsHeroBg = require('../../assets/images/projects/react-star-war
 const reactStarWarsHeroLogo = require('../../assets/images/projects/react-star-wars/hero-logo.svg');
 const reactStarWarsSnapshot = require('../../assets/images/projects/react-star-wars/snapshot.jpg');
 const reactStarWarsSnapshot2x = require('../../assets/images/projects/react-star-wars/snapshot@2x.jpg');
-// React Star Wars
+// Fetch Doggos
+const fetchDoggosHeroBg = require('../../assets/images/projects/fetch-doggos/hero-bg.jpg');
+const fetchDoggosHeroLogo = require('../../assets/images/projects/fetch-doggos/hero-logo.svg');
+const fetchDoggosSnapshot = require('../../assets/images/projects/fetch-doggos/snapshot.jpg');
+const fetchDoggosSnapshot2x = require('../../assets/images/projects/fetch-doggos/snapshot@2x.jpg');
+// WSF Resume
 const resumeApiHeroBg = require('../../assets/images/projects/resume-api/hero-bg.jpg');
 const resumeApiHeroLogo = require('../../assets/images/projects/resume-api/hero-logo.svg');
 const resumeApiSnapshot = require('../../assets/images/projects/resume-api/snapshot.jpg');
@@ -60,6 +65,34 @@ const ReactStarWars = {
   },
   description:
     'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Orignally built with using the RESTful version of SWAPI this app quickly pivoted to theGraphCMS SWAPI GraphQL Port. <br /><br /> Along with using GraphQL this project also uses the latest version of Material-UI and JavaScript Style Sheets (JSS). To try to build toward a fully JavaScript driven application and modern techniques of component based applications.'
+};
+
+const FetchDoggos = {
+  name: 'FetchDoggos',
+  demoUrl: 'https://fetch-doggos.netlify.com/',
+  releaseDate: 'Mid 2019',
+  images: {
+    hero: {
+      logo: fetchDoggosHeroLogo,
+      background: fetchDoggosHeroBg
+    },
+    snapShots: {
+      default: fetchDoggosSnapshot,
+      at2x: fetchDoggosSnapshot2x
+    },
+    tools: [
+      {
+        icon: 'assets/images/icons/react.svg',
+        name: 'React'
+      },
+      {
+        icon: 'assets/images/icons/redux.svg',
+        name: 'Redux'
+      }
+    ]
+  },
+  description:
+    'One day at the dog park playing with Remy, my Boston Terrier, I wondered if there was an API for dogs. To my surprise there was the DOG API from dog.ceo that would allow users to search for random dog images. <br/><br/>The goal of this project was to create a project working more with forms and experiement with a new framework, Semantic UI React.<br/><br/>FetchDoggos is built using React, Redux, Semantic UI React, Styled Components, GitHub, and Netlify.'
 };
 
 const ResumeApi = {
@@ -232,6 +265,7 @@ const Uwatch = {
 
 module.exports = {
   ReactStarWars,
+  FetchDoggos,
   ResumeApi,
   DarkRemnantsPodcast,
   ReactWeather,
