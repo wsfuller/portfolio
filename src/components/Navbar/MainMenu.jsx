@@ -47,6 +47,9 @@ const useStyles = makeStyles(theme => ({
   subtitle: {
     ...theme.branding.subtitle
   },
+  social: {
+    margin: `${theme.pxToRem(8)} auto`
+  },
   linkText: {
     color: theme.colors.grayScale.white,
     textDecoration: 'none'
@@ -112,7 +115,7 @@ const MainMenu = ({ location }) => {
           Front End Engineer
         </Typography>
         <Typography variant="caption">Seattle, WA</Typography>
-        <div>
+        <div className={classes.social}>
           <IconButton href="https://github.com/wsfuller" aria-label="Github">
             <FaGithub />
           </IconButton>
