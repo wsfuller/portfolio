@@ -54,19 +54,19 @@ const AboutMeEvents = [
     title: 'UC Berkeley Extension',
     date: 'March, 2018',
     icon: <FaChalkboardTeacher />,
-    description: 'Teaching introductory HTML, CSS, and JavaScript course'
+    description: 'Created and taught introductory HTML, CSS, and JavaScript course'
   },
   {
     title: 'Postman',
     date: 'November, 2018',
     icon: <FaBriefcase />,
-    description: 'Font End Engineer'
+    description: 'Front End Engineer'
   },
   {
-    title: 'Move to Seattle',
+    title: 'Moved to Seattle',
     date: 'August, 2019',
     icon: <FaCarSide />,
-    description: 'Moved from the San Francisco to Seattle'
+    description: 'Moved from the San Francisco Bay Area to Seattle'
   }
 ];
 
