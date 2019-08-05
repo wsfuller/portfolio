@@ -60,7 +60,7 @@ const AboutMeEvents = [
     title: 'Postman',
     date: 'November, 2018',
     icon: <FaBriefcase />,
-    description: 'Font End Engineer'
+    description: 'Front End Engineer'
   },
   {
     title: 'Moved to Seattle',
