@@ -54,7 +54,7 @@ const AboutMeEvents = [
     title: 'UC Berkeley Extension',
     date: 'March, 2018',
     icon: <FaChalkboardTeacher />,
-    description: 'Creating and teaching introductory HTML, CSS, and JavaScript course'
+    description: 'Created and taught introductory HTML, CSS, and JavaScript course'
   },
   {
     title: 'Postman',
