@@ -148,7 +148,7 @@ const DarkRemnantsPodcast = {
     ]
   },
   description:
-    'Dark Remnants Podcast, or DRP for short, is a Podcast about scary and odd tales. Written and hosted by Fred Knoop along with music and social media support from Suzy Ewry, these two have teamed together to bring you some very interesting horror tales. <br /><br /> This project is a complete redesign and build of their previous site. This project was built using React, Create React App, Webpack, Sass, and is deployed using Heroku web services. Drawing inspiration from the previous sites vision, photography by Fred, and listening to some tales; this site is meant to take on a clean but rough around the edges take on modern Web UI while keeping darker and unsettling elements.'
+    'Dark Remnants Podcast, or DRP for short, is a Podcast about scary and odd tales realized and narrated by Fred Knoop. The intent for this site is to create a portal for fans to have access to everything DRP. Connect on social media or listen to episodes on Apple Podcasts, Google Play, or SoundCloud. <br /><br /> This was a complete redesign and build of the previous DRP site. The project was created using Create React App, Sass, and deployed using Heroku web services. Much inspiration was drawn from the previous sites vision. Using that vision it was further powered on by the photography taken by Fred Knoop, and fully realized while listening to some tales. This site is meant to take on a clean and dark twist to modern Web UI design.'
 };
 
 const ReactWeather = {
