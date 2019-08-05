@@ -63,10 +63,10 @@ const AboutMeEvents = [
     description: 'Font End Engineer'
   },
   {
-    title: 'Move to Seattle',
+    title: 'Moved to Seattle',
     date: 'August, 2019',
     icon: <FaCarSide />,
-    description: 'Moved from the San Francisco to Seattle'
+    description: 'Moved from the San Francisco Bay Area to Seattle'
   }
 ];
 
