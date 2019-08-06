@@ -64,7 +64,7 @@ const ReactStarWars = {
     ]
   },
   description:
-    'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Orignally built with using the RESTful version of SWAPI this app quickly pivoted to theGraphCMS SWAPI GraphQL Port. <br /><br /> Along with using GraphQL this project also uses the latest version of Material-UI and JavaScript Style Sheets (JSS). To try to build toward a fully JavaScript driven application and modern techniques of component based applications.'
+    'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Originally built with using the RESTful version of SWAPI this app quickly pivoted to the GraphCMS SWAPI GraphQL port. GraphQL was ultimately chosen over the traditional RESTful service because of the ability to build out profiles in a single HTTP request versus several. <br /><br /> On top of the other tools mentioned, the UI was built using Material-UI with JSS for a completely JavaScript driven application.'
 };
 
 const FetchDoggos = {
