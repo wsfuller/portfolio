@@ -42,6 +42,7 @@ const uWatchSnapshot2x = require('../../assets/images/projects/uwatch/snapshot@2
 const ReactStarWars = {
   name: 'React Star Wars',
   demoUrl: 'https://react-star-wars.netlify.com/',
+  gitHubUrl: 'https://github.com/wsfuller/react-star-wars',
   releaseDate: 'Mid 2019',
   images: {
     hero: {
@@ -70,6 +71,7 @@ const ReactStarWars = {
 const FetchDoggos = {
   name: 'FetchDoggos',
   demoUrl: 'https://fetch-doggos.netlify.com/',
+  gitHubUrl: 'https://github.com/wsfuller/fetchDoggos',
   releaseDate: 'Mid 2019',
   images: {
     hero: {
@@ -98,6 +100,7 @@ const FetchDoggos = {
 const ResumeApi = {
   name: 'Resume API',
   demoUrl: 'https://wsf-resume-api.herokuapp.com/',
+  gitHubUrl: 'https://github.com/wsfuller/resume-api',
   releaseDate: 'Mid 2019',
   images: {
     hero: {
@@ -126,6 +129,7 @@ const ResumeApi = {
 const DarkRemnantsPodcast = {
   name: 'Dark Remnants',
   demoUrl: 'http://dark-remnants-podcast.herokuapp.com/',
+  gitHubUrl: 'https://github.com/wsfuller/dark-remnants-podcast',
   releaseDate: 'Mid 2018',
   images: {
     hero: {
@@ -154,6 +158,7 @@ const DarkRemnantsPodcast = {
 const ReactWeather = {
   name: 'ReactWeather',
   demoUrl: 'https://wsf-react-weather.netlify.com/',
+  gitHubUrl: 'https://github.com/wsfuller/react-weather',
   releaseDate: 'Late 2017',
   images: {
     hero: {
@@ -182,6 +187,7 @@ const ReactWeather = {
 const GhostJackEntertainment = {
   name: 'Ghost Jack Entertainment',
   demoUrl: 'https://ghostjackent.com/',
+  gitHubUrl: 'https://github.com/wsfuller/ghostjack',
   releaseDate: 'Mid 2016',
   images: {
     hero: {
@@ -210,6 +216,7 @@ const GhostJackEntertainment = {
 const MovieFinder = {
   name: 'Movie Finder',
   demoUrl: 'https://wsfuller.github.io/movieFinder/',
+  gitHubUrl: 'https://github.com/wsfuller/movieFinder',
   releaseDate: 'Mid 2014',
   images: {
     hero: {
@@ -238,6 +245,7 @@ const MovieFinder = {
 const Uwatch = {
   name: 'uWatch',
   demoUrl: 'https://wsfuller.github.io/uWatch/',
+  gitHubUrl: 'https://github.com/wsfuller/uWatch',
   releaseDate: 'Late 2013',
   images: {
     hero: {

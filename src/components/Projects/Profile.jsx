@@ -7,6 +7,8 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import { FaGithub } from 'react-icons/fa';
 
 import Hero from '../Hero';
 import Section from '../Section';
@@ -46,8 +48,13 @@ const useStyles = makeStyles(theme => ({
   description: {
     marginBottom: theme.pxToRem(24)
   },
+  projectButtons: {
+    display: 'flex',
+    alignItems: 'center',
+    marginTop: theme.pxToRem(24)
+  },
   demoButton: {
-    marginTop: theme.pxToRem(24),
+    marginRight: theme.pxToRem(24),
     color: theme.colors.grayScale.white
   }
 }));
@@ -99,14 +106,19 @@ const ProjectProfile = ({ project }) => {
                 <Typography variant="body1" align="center">
                   {`Released: ${project.releaseDate}`}
                 </Typography>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  href={project.demoUrl}
-                  className={classes.demoButton}
-                >
-                  Demo
-                </Button>
+                <div className={classes.projectButtons}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    href={project.demoUrl}
+                    className={classes.demoButton}
+                  >
+                    Demo
+                  </Button>
+                  <IconButton href={project.gitHubUrl} aria-label="Github" color="primary">
+                    <FaGithub />
+                  </IconButton>
+                </div>
               </div>
             </Grid>
           </Grid>
@@ -120,6 +132,7 @@ ProjectProfile.propTypes = {
   project: PropTypes.shape({
     name: PropTypes.string,
     demoUrl: PropTypes.string,
+    gitHubUrl: PropTypes.string,
     releaseDate: PropTypes.string,
     images: PropTypes.shape({
       hero: PropTypes.shape({
