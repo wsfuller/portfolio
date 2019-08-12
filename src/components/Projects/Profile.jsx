@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 import { Picture } from 'react-responsive-picture';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -74,6 +75,9 @@ const ProjectProfile = ({ project }) => {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>{`WSF Portfolio | ${project.name}`}</title>
+      </Helmet>
       <Hero
         backgroundImage={project.images.hero.background}
         altText="Colored bars signifying a view of code with syntax highlighting"
