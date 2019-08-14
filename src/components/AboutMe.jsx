@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
   contentDivider: {
     display: 'flex',
-    alignItem: 'center',
+    alignItems: 'center',
     order: 2,
     marginBottom: theme.pxToRem(32)
   },
