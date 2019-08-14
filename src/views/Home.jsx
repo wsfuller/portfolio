@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -65,7 +66,10 @@ const Home = () => {
           <CompaniesList />
         </Container>
       </Section>
-      <GoogleMap />
+      <LazyLoad>
+        <GoogleMap />
+      </LazyLoad>
+
       <Section id="about-me" title="About Me">
         <Container>
           <AboutMe />
