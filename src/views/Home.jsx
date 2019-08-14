@@ -66,10 +66,9 @@ const Home = () => {
           <CompaniesList />
         </Container>
       </Section>
-      <LazyLoad>
+      {/* <LazyLoad>
         <GoogleMap />
-      </LazyLoad>
-
+      </LazyLoad> */}
       <Section id="about-me" title="About Me">
         <Container>
           <AboutMe />
