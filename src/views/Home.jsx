@@ -56,24 +56,30 @@ const Home = () => {
         altText="Colored bars signifying a view of code with syntax highlighting"
         content={heroContent}
       />
-      <Section id="projects" title="Projects">
-        <Container>
-          <ProjectsList />
-        </Container>
-      </Section>
-      <Section title="Worked For">
-        <Container>
-          <CompaniesList />
-        </Container>
-      </Section>
-      {/* <LazyLoad>
+      <LazyLoad>
+        <Section id="projects" title="Projects">
+          <Container>
+            <ProjectsList />
+          </Container>
+        </Section>
+      </LazyLoad>
+      <LazyLoad>
+        <Section title="Worked For">
+          <Container>
+            <CompaniesList />
+          </Container>
+        </Section>
+      </LazyLoad>
+      <LazyLoad>
         <GoogleMap />
-      </LazyLoad> */}
-      <Section id="about-me" title="About Me">
-        <Container>
-          <AboutMe />
-        </Container>
-      </Section>
+      </LazyLoad>
+      <LazyLoad>
+        <Section id="about-me" title="About Me">
+          <Container>
+            <AboutMe />
+          </Container>
+        </Section>
+      </LazyLoad>
     </main>
   );
 };
