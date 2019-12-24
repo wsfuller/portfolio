@@ -67,6 +67,12 @@ const AboutMeEvents = [
     date: 'August, 2019',
     icon: <FaCarSide />,
     description: 'Moved from the San Francisco Bay Area to Seattle'
+  },
+  {
+    title: 'Leafly',
+    date: 'August, 2019',
+    icon: <FaBriefcase />,
+    description: 'Software Engineer'
   }
 ];
 

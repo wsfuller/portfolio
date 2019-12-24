@@ -1,3 +1,4 @@
+const leafly = require('../../assets/images/companies/leafly.svg');
 const postman = require('../../assets/images/companies/postman.svg');
 const ucbe = require('../../assets/images/companies/the-university-of-california.svg');
 const airbnb = require('../../assets/images/companies/airbnb.svg');
@@ -5,6 +6,10 @@ const asus = require('../../assets/images/companies/asus.svg');
 const incentiveNetworks = require('../../assets/images/companies/incentive-networks.svg');
 
 module.exports = [
+  {
+    name: 'Leafly',
+    image: leafly
+  },
   {
     name: 'Postman',
     image: postman

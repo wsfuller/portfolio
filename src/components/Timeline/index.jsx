@@ -37,25 +37,23 @@ const styles = {
   }
 };
 
-const PortfolioTimeline = () => {
-  return (
-    <Timeline lineColor={theme.colors.primary.default} style={styles.timeline}>
-      {AboutMeEvents.map(event => (
-        <TimelineEvent
-          key={event.date}
-          title={event.title}
-          createdAt={<span style={styles.createdAt}>{event.date}</span>}
-          icon={<span style={styles.icon}>{event.icon}</span>}
-          bubbleStyle={styles.bubble}
-          titleStyle={styles.title}
-          contentStyle={styles.content}
-          collapsible
-        >
-          {event.description}
-        </TimelineEvent>
-      ))}
-    </Timeline>
-  );
-};
+const PortfolioTimeline = () => (
+  <Timeline lineColor={theme.colors.primary.default} style={styles.timeline}>
+    {AboutMeEvents.map(({ date, title, icon, description }) => (
+      <TimelineEvent
+        key={date + title}
+        title={title}
+        createdAt={<span style={styles.createdAt}>{date}</span>}
+        icon={<span style={styles.icon}>{icon}</span>}
+        bubbleStyle={styles.bubble}
+        titleStyle={styles.title}
+        contentStyle={styles.content}
+        collapsible
+      >
+        {description}
+      </TimelineEvent>
+    ))}
+  </Timeline>
+);
 
 export default PortfolioTimeline;
