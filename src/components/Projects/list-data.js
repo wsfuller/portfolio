@@ -1,3 +1,4 @@
+const elderScrollsLegends = require('../../assets/images/projects/elder-scrolls-legends/card-logo.svg');
 const reactStarWars = require('../../assets/images/projects/react-star-wars/card-logo.svg');
 const fetchDoggos = require('../../assets/images/projects/fetch-doggos/card-logo.svg');
 const resumeApi = require('../../assets/images/projects/resume-api/card-logo.svg');
@@ -9,6 +10,13 @@ const movieFinder = require('../../assets/images/projects/movie-finder/card-logo
 const uWatch = require('../../assets/images/projects/uwatch/card-logo.svg');
 
 module.exports = [
+  {
+    id: 'elder-scrolls-legends',
+    title: 'Elder Scrolls Legends',
+    description: 'React + Material UI application powered by the Elders Scrolls Legends API',
+    image: elderScrollsLegends,
+    demoUrl: 'https://elder-scrolls-legends.netlify.com/'
+  },
   {
     id: 'react-star-wars',
     title: 'React Star Wars',

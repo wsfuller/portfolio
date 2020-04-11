@@ -1,4 +1,9 @@
 // React Star Wars
+const elderScrollsLegendsHeroBg = require('../../assets/images/projects/elder-scrolls-legends/hero-bg.jpg');
+const elderScrollsLegendsHeroLogo = require('../../assets/images/projects/elder-scrolls-legends/hero-logo.svg');
+const elderScrollsLegendsSnapshot = require('../../assets/images/projects/elder-scrolls-legends/snapshot.jpg');
+const elderScrollsLegendsSnapshot2x = require('../../assets/images/projects/elder-scrolls-legends/snapshot@2x.jpg');
+// React Star Wars
 const reactStarWarsHeroBg = require('../../assets/images/projects/react-star-wars/hero-bg.jpg');
 const reactStarWarsHeroLogo = require('../../assets/images/projects/react-star-wars/hero-logo.svg');
 const reactStarWarsSnapshot = require('../../assets/images/projects/react-star-wars/snapshot.jpg');
@@ -38,6 +43,35 @@ const uWatchHeroBg = require('../../assets/images/projects/uwatch/hero-bg.jpg');
 const uWatchHeroLogo = require('../../assets/images/projects/uwatch/hero-logo.svg');
 const uWatchSnapshot = require('../../assets/images/projects/uwatch/snapshot.jpg');
 const uWatchSnapshot2x = require('../../assets/images/projects/uwatch/snapshot@2x.jpg');
+
+const ElderScrollsLegends = {
+  name: 'Elder Scrolls Legends',
+  demoUrl: 'https://elder-scrolls-legends.netlify.com/',
+  gitHubUrl: 'https://github.com/wsfuller/elder-scrolls-legends',
+  releaseDate: 'Early - Mid 2020',
+  images: {
+    hero: {
+      logo: elderScrollsLegendsHeroLogo,
+      background: elderScrollsLegendsHeroBg
+    },
+    snapShots: {
+      default: elderScrollsLegendsSnapshot,
+      at2x: elderScrollsLegendsSnapshot2x
+    },
+    tools: [
+      {
+        icon: 'assets/images/icons/react.svg',
+        name: 'React'
+      },
+      {
+        icon: 'assets/images/icons/redux.svg',
+        name: 'Redux'
+      }
+    ]
+  },
+  description:
+    'The goal of this project is to build a visually appealing, modern responsive front end application. The application connects into the Elder Scrolls Legends API for data retrieval. Users are then able to infinitely scroll through the card data and fuzzy search by card names. <br /><br /> This application was built with React using Create React App. State management and data retrieval with React Hooks. The user interface is built with the React Material UI framework and deployed on Netlify.'
+};
 
 const ReactStarWars = {
   name: 'React Star Wars',
@@ -272,6 +306,7 @@ const Uwatch = {
 };
 
 module.exports = {
+  ElderScrollsLegends,
   ReactStarWars,
   FetchDoggos,
   ResumeApi,
