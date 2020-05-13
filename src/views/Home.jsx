@@ -10,7 +10,7 @@ import Hero from '../components/Hero';
 import HeroImage from '../assets/images/hero-backgrounds/code-background.svg';
 import Section from '../components/Section';
 import ProjectsGallery from '../components/Projects/Gallery';
-import CompaniesList from '../components/Companies/List';
+import Companies from '../components/Companies';
 import GoogleMap from '../components/GoogleMap';
 import AboutMe from '../components/AboutMe';
 
@@ -66,7 +66,7 @@ const Home = () => {
       <LazyLoad>
         <Section title="Worked For">
           <Container>
-            <CompaniesList />
+            <Companies />
           </Container>
         </Section>
       </LazyLoad>
