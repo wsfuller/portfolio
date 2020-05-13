@@ -9,7 +9,7 @@ import { FaCoffee, FaCode } from 'react-icons/fa';
 import Hero from '../components/Hero';
 import HeroImage from '../assets/images/hero-backgrounds/code-background.svg';
 import Section from '../components/Section';
-import ProjectsList from '../components/Projects/List';
+import ProjectsGallery from '../components/Projects/Gallery';
 import CompaniesList from '../components/Companies/List';
 import GoogleMap from '../components/GoogleMap';
 import AboutMe from '../components/AboutMe';
@@ -59,7 +59,7 @@ const Home = () => {
       <LazyLoad>
         <Section id="projects" title="Projects">
           <Container>
-            <ProjectsList />
+            <ProjectsGallery />
           </Container>
         </Section>
       </LazyLoad>

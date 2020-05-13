@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 import { Redirect, withRouter } from 'react-router-dom';
 
-import Profile from '../components/Projects/Profile';
-import Projects from '../components/Projects/profile-data';
+import { Details } from '../components/Projects';
+import Project from '../components/Projects/detailsData';
 
 const ProjectProfile = ({ match }) => {
   const camelCase = text => {
@@ -16,12 +17,19 @@ const ProjectProfile = ({ match }) => {
   };
   const projectName = camelCase(match.params.name);
 
-  const projectDetails = Projects[projectName];
+  const projectDetails = Project[projectName];
 
-  if (projectDetails) {
-    return <Profile project={projectDetails} />;
+  if (!projectDetails) {
+    return <Redirect to="/not-found" />;
   }
-  return <Redirect to="/not-found" />;
+  return (
+    <Fragment>
+      <Helmet>
+        <title>{`WSF Portfolio | ${projectDetails.name}`}</title>
+      </Helmet>
+      <Details project={projectDetails} />
+    </Fragment>
+  );
 };
 
 ProjectProfile.propTypes = {
