@@ -4,26 +4,8 @@ import PropTypes from 'prop-types';
 
 import { withStyles } from '@material-ui/core/styles';
 
-import mapOptions from './map-options';
-
-const useStyles = theme => ({
-  map: {
-    height: theme.pxToRem(300),
-    margin: `${theme.pxToRem(32)} auto`,
-    [theme.breakpoints.up('md')]: {
-      height: theme.pxToRem(400)
-    },
-    [theme.breakpoints.up('lg')]: {
-      height: theme.pxToRem(500)
-    },
-    '& .gm-style div:first-child': {
-      cursor: 'default !important'
-    },
-    '& .gmnoprint, .gm-style-cc': {
-      display: 'none'
-    }
-  }
-});
+import mapOptions from './mapOptions';
+import GoogleMapStyles from './GoogleMap.styles';
 
 class GoogleMap extends Component {
   constructor(props) {
@@ -62,4 +44,4 @@ GoogleMap.propTypes = {
   }).isRequired
 };
 
-export default withStyles(useStyles)(GoogleMap);
+export default withStyles(GoogleMapStyles)(GoogleMap);
