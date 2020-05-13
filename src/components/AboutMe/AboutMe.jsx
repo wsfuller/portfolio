@@ -7,7 +7,7 @@ import Timeline from '../Timeline';
 
 import Avatars from './Avatars';
 import DevTools from '../DevTools';
-import SocialList from '../SocialList';
+import SocialNetwork from '../SocialNetwork';
 import Resume from '../../assets/documents/william-s-fuller-resume.pdf';
 import AboutMeStyles from './AboutMe.styles';
 
@@ -40,7 +40,7 @@ const AboutMe = () => {
             <Grid item xs={12}>
               <div className={listDivider} />
             </Grid>
-            <SocialList />
+            <SocialNetwork />
           </Grid>
           <Button variant="contained" href={Resume} color="primary" className={resumeButton}>
             View Resume
