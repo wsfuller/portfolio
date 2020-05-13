@@ -70,7 +70,11 @@ const ElderScrollsLegends = {
     ]
   },
   description:
-    'The goal of this project is to build a visually appealing, modern responsive front end application. The application connects into the Elder Scrolls Legends API for data retrieval. Users are then able to infinitely scroll through the card data and fuzzy search by card names. <br /><br /> This application was built with React using Create React App. State management and data retrieval with React Hooks. The user interface is built with the React Material UI framework and deployed on Netlify.'
+    'The goal of this project is to build a visually appealing, modern responsive front end application. The application connects into the Elder Scrolls Legends API for data retrieval. Users are then able to infinitely scroll through the card data and fuzzy search by card names. <br /><br /> This application was built with React using Create React App. State management and data retrieval with React Hooks. The user interface is built with the React Material UI framework and deployed on Netlify.',
+  gaEventLabels: {
+    demo: 'Elder Scrolls Legends Demo',
+    github: 'Elder Scrolls Legends GitHub'
+  }
 };
 
 const ReactStarWars = {
@@ -99,7 +103,11 @@ const ReactStarWars = {
     ]
   },
   description:
-    'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Originally built with using the RESTful version of SWAPI this app quickly pivoted to the GraphCMS SWAPI GraphQL port. GraphQL was ultimately chosen over the traditional RESTful service because of the ability to build out profiles in a single HTTP request versus several. <br /><br /> On top of the other tools mentioned, the UI was built using Material-UI with JSS for a completely JavaScript driven application.'
+    'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Originally built with using the RESTful version of SWAPI this app quickly pivoted to the GraphCMS SWAPI GraphQL port. GraphQL was ultimately chosen over the traditional RESTful service because of the ability to build out profiles in a single HTTP request versus several. <br /><br /> On top of the other tools mentioned, the UI was built using Material-UI with JSS for a completely JavaScript driven application.',
+  gaEventLabels: {
+    demo: 'React Star Wars Demo',
+    github: 'React Star Wars GitHub'
+  }
 };
 
 const FetchDoggos = {
@@ -128,7 +136,11 @@ const FetchDoggos = {
     ]
   },
   description:
-    'One day at the dog park playing with Remy, my Boston Terrier, I wondered if there was an API for dogs. To my surprise there was the DOG API from dog.ceo that would allow users to search for random dog images. <br/><br/>The goal of this project was to create a project working more with forms and experiment with a new framework, Semantic UI React.<br/><br/>FetchDoggos is built using React, Redux, Semantic UI React, Styled Components, GitHub, and Netlify.'
+    'One day at the dog park playing with Remy, my Boston Terrier, I wondered if there was an API for dogs. To my surprise there was the DOG API from dog.ceo that would allow users to search for random dog images. <br/><br/>The goal of this project was to create a project working more with forms and experiment with a new framework, Semantic UI React.<br/><br/>FetchDoggos is built using React, Redux, Semantic UI React, Styled Components, GitHub, and Netlify.',
+  gaEventLabels: {
+    demo: 'FetchDoggos Demo',
+    github: 'FetchDoggos GitHub'
+  }
 };
 
 const ResumeApi = {
@@ -157,7 +169,11 @@ const ResumeApi = {
     ]
   },
   description:
-    'I wanted to create a fun and simple API using Node and mongoDB to step up my back end technology skills. I decided it would be fun to take my resume and make it into an API. In doing so I was able to leverage Node, Express, mLab, and Heroku to deploy an API that anyone can make GET requests to. The API includes endpoints for personal, technology, experience, and education information'
+    'I wanted to create a fun and simple API using Node and mongoDB to step up my back end technology skills. I decided it would be fun to take my resume and make it into an API. In doing so I was able to leverage Node, Express, mLab, and Heroku to deploy an API that anyone can make GET requests to. The API includes endpoints for personal, technology, experience, and education information',
+  gaEventLabels: {
+    demo: 'Resume API Demo',
+    github: 'Resume API GitHub'
+  }
 };
 
 const DarkRemnantsPodcast = {
@@ -186,7 +202,11 @@ const DarkRemnantsPodcast = {
     ]
   },
   description:
-    'Dark Remnants Podcast, or DRP for short, is a Podcast about scary and odd tales realized and narrated by Fred Knoop. The intent for this site is to create a portal for fans to have access to everything DRP. Connect on social media or listen to episodes on Apple Podcasts, Google Play, or SoundCloud. <br /><br /> This was a complete redesign and build of the previous DRP site. The project was created using Create React App, Sass, and deployed using Heroku web services. Much inspiration was drawn from the previous sites vision. Using that vision it was further powered on by the photography taken by Fred Knoop, and fully realized while listening to some tales. This site is meant to take on a clean and dark twist to modern Web UI design.'
+    'Dark Remnants Podcast, or DRP for short, is a Podcast about scary and odd tales realized and narrated by Fred Knoop. The intent for this site is to create a portal for fans to have access to everything DRP. Connect on social media or listen to episodes on Apple Podcasts, Google Play, or SoundCloud. <br /><br /> This was a complete redesign and build of the previous DRP site. The project was created using Create React App, Sass, and deployed using Heroku web services. Much inspiration was drawn from the previous sites vision. Using that vision it was further powered on by the photography taken by Fred Knoop, and fully realized while listening to some tales. This site is meant to take on a clean and dark twist to modern Web UI design.',
+  gaEventLabels: {
+    demo: 'Dark Remnants Podcast Demo',
+    github: 'Dark Remnants Podcast GitHub'
+  }
 };
 
 const ReactWeather = {
@@ -215,7 +235,11 @@ const ReactWeather = {
     ]
   },
   description:
-    'ReactWeather is a small React + Redux application that is linked to the OpenWeatherMap API. A user is able to search by US city and state to get local weather information like tempature, humidity, cloud coverage, etc. Google Maps API was also integrated and changes according to the user search specifications.</br></br> The primary reason for creating this project was to learn about the Container > Component pattern in React. The idea is to create Containers that handle getting data and passing that into Components that handle the presentation of received data. This was also a chance to use and become more familiar with the Material-UI framework which as a lot of great components to work with and of course continue using Material Design.'
+    'ReactWeather is a small React + Redux application that is linked to the OpenWeatherMap API. A user is able to search by US city and state to get local weather information like tempature, humidity, cloud coverage, etc. Google Maps API was also integrated and changes according to the user search specifications.</br></br> The primary reason for creating this project was to learn about the Container > Component pattern in React. The idea is to create Containers that handle getting data and passing that into Components that handle the presentation of received data. This was also a chance to use and become more familiar with the Material-UI framework which as a lot of great components to work with and of course continue using Material Design.',
+  gaEventLabels: {
+    demo: 'React Weather Demo',
+    github: 'React Weather GitHub'
+  }
 };
 
 const GhostJackEntertainment = {
@@ -244,7 +268,11 @@ const GhostJackEntertainment = {
     ]
   },
   description:
-    'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.'
+    'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.',
+  gaEventLabels: {
+    demo: 'Ghost Jack Entertainment Demo',
+    github: 'Ghost Jack Entertainment GitHub'
+  }
 };
 
 const MovieFinder = {
@@ -273,7 +301,11 @@ const MovieFinder = {
     ]
   },
   description:
-    'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.'
+    'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.',
+  gaEventLabels: {
+    demo: 'Movie Finder Demo',
+    github: 'Movie Finder GitHub'
+  }
 };
 
 const Uwatch = {
@@ -302,7 +334,11 @@ const Uwatch = {
     ]
   },
   description:
-    'For one of my courses at the AICSF, Emerging Technologies, we were assigned a project to develop a site showcasing a bleeding edge product. With all the hype around the Apple Watch that was rumored to be coming out for quite awhile at that time, my partner for the project and I decided to do the ultimate smart watch. This was a great experience in really working with Bootstrap and font icons from Font Awesome. <br /><br/>For this project I was tasked with development, wire framing, and technology specifications. The site was designed using Photoshop, built using CSS3, HTML5, Bootstrap, jQuery and PHP. This project really reminds me of the evolution of not only my skills but the maturing of front end technologies that have taken place over the last several years'
+    'For one of my courses at the AICSF, Emerging Technologies, we were assigned a project to develop a site showcasing a bleeding edge product. With all the hype around the Apple Watch that was rumored to be coming out for quite awhile at that time, my partner for the project and I decided to do the ultimate smart watch. This was a great experience in really working with Bootstrap and font icons from Font Awesome. <br /><br/>For this project I was tasked with development, wire framing, and technology specifications. The site was designed using Photoshop, built using CSS3, HTML5, Bootstrap, jQuery and PHP. This project really reminds me of the evolution of not only my skills but the maturing of front end technologies that have taken place over the last several years',
+  gaEventLabels: {
+    demo: 'uWatch Demo',
+    github: 'uWatch GitHub'
+  }
 };
 
 module.exports = {

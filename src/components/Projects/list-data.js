@@ -15,7 +15,11 @@ module.exports = [
     title: 'Elder Scrolls Legends',
     description: 'React + Material UI application powered by the Elders Scrolls Legends API',
     image: elderScrollsLegends,
-    demoUrl: 'https://elder-scrolls-legends.netlify.com/'
+    demoUrl: 'https://elder-scrolls-legends.netlify.com/',
+    gaEventLabels: {
+      demo: 'Elder Scrolls Legends Demo',
+      learnMore: 'Elder Scrolls Legends Learn More'
+    }
   },
   {
     id: 'react-star-wars',
@@ -23,42 +27,66 @@ module.exports = [
     description:
       'React + GraphQL + Apollo Client powered by the GraphCMS GraphQL Star Wars API wrapper',
     image: reactStarWars,
-    demoUrl: 'https://react-star-wars.netlify.com/'
+    demoUrl: 'https://react-star-wars.netlify.com/',
+    gaEventLabels: {
+      demo: 'React Star Wars Demo',
+      learnMore: 'React Star Wars Learn More'
+    }
   },
   {
     id: 'fetch-doggos',
     title: 'FetchDoggos',
     description: 'React + Redux application powered by the Dog API',
     image: fetchDoggos,
-    demoUrl: 'https://fetch-doggos.netlify.com/'
+    demoUrl: 'https://fetch-doggos.netlify.com/',
+    gaEventLabels: {
+      demo: 'FetchDoggos Demo',
+      learnMore: 'FetchDoggos Learn More'
+    }
   },
   {
     id: 'resume-api',
     title: 'Resume API',
     description: 'My Resume as an API using Node, Mongo, and Heroku ',
     image: resumeApi,
-    demoUrl: 'https://wsf-resume-api.herokuapp.com/'
+    demoUrl: 'https://wsf-resume-api.herokuapp.com/',
+    gaEventLabels: {
+      demo: 'Resume API Demo',
+      learnMore: 'Resume API Learn More'
+    }
   },
   {
     id: 'dark-remnants-podcast',
     title: 'Dark Remnants Podcast',
     description: 'Single Page React app showcasing episodes for the Dark Remnants Podcast',
     image: darkRemnantsPodcast,
-    demoUrl: 'http://dark-remnants-podcast.herokuapp.com/'
+    demoUrl: 'http://dark-remnants-podcast.herokuapp.com/',
+    gaEventLabels: {
+      demo: 'Dark Remnants Podcast Demo',
+      learnMore: 'Dark Remnants Podcast Learn More'
+    }
   },
   {
     id: 'react-weather',
     title: 'ReactWeather',
     description: 'React application using the OpenWeatherMap API to bring in weather information',
     image: reactWeather,
-    demoUrl: 'https://wsf-react-weather.netlify.com/'
+    demoUrl: 'https://wsf-react-weather.netlify.com/',
+    gaEventLabels: {
+      demo: 'React Weather Demo',
+      learnMore: 'React Weather Learn More'
+    }
   },
   {
     id: 'ghost-jack-entertainment',
     title: 'GhostJack Entertainment',
     description: 'Single page client site using HTML, Sass, and jQuery',
     image: ghostJackEntertainment,
-    demoUrl: 'http://ghostjackent.com/'
+    demoUrl: 'http://ghostjackent.com/',
+    gaEventLabels: {
+      demo: 'Ghost Jack Entertainment Demo',
+      learnMore: 'Ghost Jack Entertainment Learn More'
+    }
   },
   // {
   //   id: 'angular-pokedex',
@@ -72,13 +100,21 @@ module.exports = [
     title: 'Movie Finder',
     description: 'Single page site using HTML, Sass, and jQuery to fetch data from themoviedb.org',
     image: movieFinder,
-    demoUrl: 'https://wsfuller.github.io/movieFinder/'
+    demoUrl: 'https://wsfuller.github.io/movieFinder/',
+    gaEventLabels: {
+      demo: 'Movie Finder Demo',
+      learnMore: 'Movie Finder Learn More'
+    }
   },
   {
     id: 'uwatch',
     title: 'uWatch',
     description: 'Single page site using HTML, Sass, jQuery, and Bootstrap',
     image: uWatch,
-    demoUrl: 'https://wsfuller.github.io/uWatch/'
+    demoUrl: 'https://wsfuller.github.io/uWatch/',
+    gaEventLabels: {
+      demo: 'uWatch Demo',
+      learnMore: 'uWatch Learn More'
+    }
   }
 ];
