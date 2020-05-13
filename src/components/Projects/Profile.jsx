@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Picture } from 'react-responsive-picture';
+import { event } from 'react-ga';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -116,10 +117,28 @@ const ProjectProfile = ({ project }) => {
                     color="primary"
                     href={project.demoUrl}
                     className={classes.demoButton}
+                    onClick={() =>
+                      event({
+                        category: 'Project Profile',
+                        action: 'Click',
+                        label: project.gaEventLabels.demo
+                      })
+                    }
                   >
                     Demo
                   </Button>
-                  <IconButton href={project.gitHubUrl} aria-label="Github" color="primary">
+                  <IconButton
+                    href={project.gitHubUrl}
+                    aria-label="Github"
+                    color="primary"
+                    onClick={() =>
+                      event({
+                        category: 'Project Profile',
+                        action: 'Click',
+                        label: project.gaEventLabels.github
+                      })
+                    }
+                  >
                     <FaGithub />
                   </IconButton>
                 </div>
@@ -148,7 +167,11 @@ ProjectProfile.propTypes = {
         default: PropTypes.string
       })
     }),
-    description: PropTypes.string
+    description: PropTypes.string,
+    gaEventLabels: PropTypes.shape({
+      demo: PropTypes.string,
+      github: PropTypes.string
+    })
   }).isRequired
 };
 

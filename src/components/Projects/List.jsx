@@ -1,4 +1,5 @@
 import React from 'react';
+import { event } from 'react-ga';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -52,10 +53,28 @@ const ProjectsList = () => {
                 color="primary"
                 variant="contained"
                 href={project.demoUrl}
+                onClick={() =>
+                  event({
+                    category: 'Project List',
+                    action: 'Click',
+                    label: project.gaEventLabels.demo
+                  })
+                }
               >
                 View Demo
               </Button>
-              <Button size="small" color="primary" href={`/projects/${project.id}`}>
+              <Button
+                size="small"
+                color="primary"
+                href={`/projects/${project.id}`}
+                onClick={() =>
+                  event({
+                    category: 'Project List',
+                    action: 'Click',
+                    label: project.gaEventLabels.learnMore
+                  })
+                }
+              >
                 Learn More
               </Button>
             </CardActions>
