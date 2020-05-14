@@ -1,10 +1,10 @@
 import React from 'react';
 import { Picture } from 'react-responsive-picture';
 
-import Me from '../../assets/images/about-me/me.png';
-import Me2x from '../../assets/images/about-me/me@2x.png';
-import Remy from '../../assets/images/about-me/remy.png';
-import Remy2x from '../../assets/images/about-me/remy@2x.png';
+import Me from '../../assets/images/avatars/me.png';
+import Me2x from '../../assets/images/avatars/me@2x.png';
+import Remy from '../../assets/images/avatars/remy.png';
+import Remy2x from '../../assets/images/avatars/remy@2x.png';
 import AvatarsStyles from './Avatars.styles';
 
 const Avatars = () => {
