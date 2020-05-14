@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import { Picture } from 'react-responsive-picture';
 import { event } from 'react-ga';
 
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -15,73 +13,31 @@ import { FaGithub } from 'react-icons/fa';
 import Hero from '../Hero';
 import Section from '../Section';
 import Image from '../Image';
+import DetailsStyles from './Details.styles';
 
-const useStyles = makeStyles(theme => ({
-  overlay: {
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-    zIndex: 2,
-    background: 'rgba(33,33,33, 0.8)'
-  },
-  heroImage: {
-    width: theme.pxToRem(800),
-    opacity: 0.8
-  },
-  responsiveImage: {
-    width: '100%',
-    maxWidth: theme.pxToRem(800),
-    height: 'auto',
-    display: 'block',
-    margin: 'auto',
-    borderRadius: theme.borderRadius.default,
-    boxShadow: `0 ${theme.pxToRem(5)} ${theme.pxToRem(10)} 0 rgba(0,0,0,.5)`
-  },
-  about: {
-    width: '70%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    margin: 'auto'
-  },
-  description: {
-    marginBottom: theme.pxToRem(24)
-  },
-  projectButtons: {
-    display: 'flex',
-    alignItems: 'center',
-    marginTop: theme.pxToRem(24)
-  },
-  demoButton: {
-    marginRight: theme.pxToRem(24),
-    color: theme.colors.grayScale.white
-  }
-}));
-
-const ProjectProfile = ({ project }) => {
-  const classes = useStyles();
+const Details = ({ project }) => {
+  const classes = DetailsStyles();
+  const {
+    heroOverlay,
+    heroImage,
+    responsiveImage,
+    about,
+    description,
+    projectButtons,
+    demoButton
+  } = classes;
 
   const heroContent = (
-    <div className={classes.overlay}>
-      <Image
-        customClass={classes.heroImage}
-        src={project.images.hero.logo}
-        alt={`${project.name} logo`}
-      />
+    <div className={heroOverlay}>
+      <Image customClass={heroImage} src={project.images.hero.logo} alt={`${project.name} logo`} />
     </div>
   );
 
   return (
     <Fragment>
-      <Helmet>
-        <title>{`WSF Portfolio | ${project.name}`}</title>
-      </Helmet>
       <Hero
         backgroundImage={project.images.hero.background}
-        altText="Colored bars signifying a view of code with syntax highlighting"
+        altText={`Screenshot of the ${project.name} application`}
         content={heroContent}
       />
       <Section title={project.name}>
@@ -89,34 +45,29 @@ const ProjectProfile = ({ project }) => {
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Picture
-                className={classes.responsiveImage}
+                className={responsiveImage}
                 src={`${project.images.snapShots.at2x} 2x, ${project.images.snapShots.default} 1x`}
                 alt={`Screenshot of ${project.name} inside an illustration of a browser window`}
               />
             </Grid>
             <Grid item xs={12} md={6}>
-              <div className={classes.about}>
+              <div className={about}>
                 <Typography variant="h5" align="center" gutterBottom>
                   About
                 </Typography>
-                <Typography
-                  className={classes.description}
-                  variant="body1"
-                  align="justify"
-                  gutterBottom
-                >
+                <Typography className={description} variant="body1" align="justify" gutterBottom>
                   {/* // eslint-disable-next-line react/no-danger */}
                   <span dangerouslySetInnerHTML={{ __html: project.description }} />
                 </Typography>
                 <Typography variant="body1" align="center">
                   {`Released: ${project.releaseDate}`}
                 </Typography>
-                <div className={classes.projectButtons}>
+                <div className={projectButtons}>
                   <Button
                     variant="contained"
                     color="primary"
                     href={project.demoUrl}
-                    className={classes.demoButton}
+                    className={demoButton}
                     onClick={() =>
                       event({
                         category: 'Project Profile',
@@ -151,7 +102,7 @@ const ProjectProfile = ({ project }) => {
   );
 };
 
-ProjectProfile.propTypes = {
+Details.propTypes = {
   project: PropTypes.shape({
     name: PropTypes.string,
     demoUrl: PropTypes.string,
@@ -175,4 +126,4 @@ ProjectProfile.propTypes = {
   }).isRequired
 };
 
-export default ProjectProfile;
+export default Details;

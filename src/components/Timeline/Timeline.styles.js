@@ -1,10 +1,6 @@
-import React from 'react';
-import { Timeline, TimelineEvent } from 'react-event-timeline';
-
 import theme from '../../theme';
-import AboutMeEvents from './data';
 
-const styles = {
+const TimelineStyles = {
   timeline: {
     width: '65%',
     fontSize: 'inherit',
@@ -37,23 +33,4 @@ const styles = {
   }
 };
 
-const PortfolioTimeline = () => (
-  <Timeline lineColor={theme.colors.primary.default} style={styles.timeline}>
-    {AboutMeEvents.map(({ date, title, icon, description }) => (
-      <TimelineEvent
-        key={date + title}
-        title={title}
-        createdAt={<span style={styles.createdAt}>{date}</span>}
-        icon={<span style={styles.icon}>{icon}</span>}
-        bubbleStyle={styles.bubble}
-        titleStyle={styles.title}
-        contentStyle={styles.content}
-        collapsible
-      >
-        {description}
-      </TimelineEvent>
-    ))}
-  </Timeline>
-);
-
-export default PortfolioTimeline;
+export default TimelineStyles;

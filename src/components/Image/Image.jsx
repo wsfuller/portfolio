@@ -1,20 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(() => ({
-  image: {
-    maxWidth: '100%',
-    height: 'auto',
-    display: 'block'
-  }
-}));
+import ImageStyles from './Image.styles';
 
 const Image = ({ customClass, src, alt }) => {
-  const classes = useStyles();
+  const classes = ImageStyles();
+  const { image } = classes;
 
-  return <img className={`${classes.image}  ${customClass}`} src={src} alt={alt} />;
+  return <img className={`${image}  ${customClass}`} src={src} alt={alt} />;
 };
 
 Image.propTypes = {

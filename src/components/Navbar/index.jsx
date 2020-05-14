@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 
-import Branding from '../Branding';
+import LogoBranding from '../LogoBranding';
 import MainMenu from './MainMenu';
 
 const styles = theme => ({
@@ -52,7 +52,7 @@ class Navbar extends Component {
         <AppBar position="fixed">
           <Toolbar className={classes.toolbar}>
             <Link to="/" className={classes.brandingLink}>
-              <Branding />
+              <LogoBranding />
             </Link>
             <IconButton
               className={classes.menuButton}
@@ -82,7 +82,7 @@ class Navbar extends Component {
 Navbar.propTypes = {
   classes: PropTypes.shape({
     toolbar: PropTypes.string,
-    brandkingLink: PropTypes.string,
+    brandingLink: PropTypes.string,
     menuButton: PropTypes.string
   }).isRequired
 };
