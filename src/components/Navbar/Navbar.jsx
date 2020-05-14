@@ -75,7 +75,6 @@ const Navbar = props => {
     </Fragment>
   );
 };
-// }
 
 Navbar.propTypes = {
   classes: PropTypes.shape({
