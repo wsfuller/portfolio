@@ -14,8 +14,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import { FaGithub, FaLinkedinIn, FaFreeCodeCamp } from 'react-icons/fa';
 
-import Me from '../../assets/images/about-me/me.png';
-import Me2x from '../../assets/images/about-me/me@2x.png';
+import Me from '../../assets/images/avatars/me.png';
+import Me2x from '../../assets/images/avatars/me@2x.png';
 import Resume from '../../assets/documents/william-s-fuller-resume.pdf';
 
 const useStyles = makeStyles(theme => ({
