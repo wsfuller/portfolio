@@ -29,6 +29,9 @@ const GalleryCard = ({ project }) => {
       <CardActions>
         <Button
           className={demoButton}
+          style={{
+            color: 'white'
+          }}
           size="small"
           color="primary"
           variant="contained"
