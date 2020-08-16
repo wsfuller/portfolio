@@ -10,9 +10,9 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import { FaGithub } from 'react-icons/fa';
 
-import Hero from '../Hero';
-import Section from '../Section';
-import Image from '../Image';
+import Hero from '../../Hero';
+import Section from '../../Section';
+import Image from '../../Image';
 import DetailsStyles from './Details.styles';
 
 const Details = ({ project }) => {

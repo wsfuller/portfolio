@@ -1,13 +1,13 @@
-const elderScrollsLegends = require('../../assets/images/projects/elder-scrolls-legends/card-logo.svg');
-const reactStarWars = require('../../assets/images/projects/react-star-wars/card-logo.svg');
-const fetchDoggos = require('../../assets/images/projects/fetch-doggos/card-logo.svg');
-const resumeApi = require('../../assets/images/projects/resume-api/card-logo.svg');
-const darkRemnantsPodcast = require('../../assets/images/projects/dark-remnants-podcast/card-logo.svg');
-const reactWeather = require('../../assets/images/projects/react-weather/card-logo.svg');
-const ghostJackEntertainment = require('../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
+const elderScrollsLegends = require('../../../assets/images/projects/elder-scrolls-legends/card-logo.svg');
+const reactStarWars = require('../../../assets/images/projects/react-star-wars/card-logo.svg');
+const fetchDoggos = require('../../../assets/images/projects/fetch-doggos/card-logo.svg');
+const resumeApi = require('../../../assets/images/projects/resume-api/card-logo.svg');
+const darkRemnantsPodcast = require('../../../assets/images/projects/dark-remnants-podcast/card-logo.svg');
+const reactWeather = require('../../../assets/images/projects/react-weather/card-logo.svg');
+const ghostJackEntertainment = require('../../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
 // const angularPokedex = require('../../assets/images/projects/angular-pokedex/card-logo.svg');
-const movieFinder = require('../../assets/images/projects/movie-finder/card-logo.svg');
-const uWatch = require('../../assets/images/projects/uwatch/card-logo.svg');
+const movieFinder = require('../../../assets/images/projects/movie-finder/card-logo.svg');
+const uWatch = require('../../../assets/images/projects/uwatch/card-logo.svg');
 
 module.exports = [
   {
