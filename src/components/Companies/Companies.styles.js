@@ -7,6 +7,23 @@ const CompaniesStyles = makeStyles(theme => ({
       flexDirection: 'row'
     }
   },
+  companyCarousel: {
+    '& .carousel': {
+      '& .slider-wrapper': {
+        height: '7rem'
+      },
+      '& .slide': {
+        top: '.5rem',
+        background: 'transparent'
+      },
+      '& .control-dots': {
+        margin: 0
+      },
+      '& .control-dots .dot': {
+        background: theme.colors.primary.default
+      }
+    }
+  },
   company: {
     maxWidth: theme.pxToRem(75),
     height: theme.pxToRem(75),
