@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import theme from './theme';
 import App from './components/App';

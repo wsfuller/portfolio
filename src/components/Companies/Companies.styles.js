@@ -8,6 +8,7 @@ const CompaniesStyles = makeStyles(theme => ({
     }
   },
   companyCarousel: {
+    margin: 'auto',
     '& .carousel': {
       '& .slider-wrapper': {
         height: '7rem'

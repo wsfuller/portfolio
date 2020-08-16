@@ -4,19 +4,12 @@ import { Helmet } from 'react-helmet';
 import { Redirect, withRouter } from 'react-router-dom';
 
 import { Details } from '../components/Projects';
-import Project from '../components/Projects/detailsData';
+import Project from '../components/Projects/Details/detailsData';
+
+import camelCase from '../utils/camelCase';
 
 const ProjectProfile = ({ match }) => {
-  const camelCase = text => {
-    const name = text.split('-');
-
-    for (let i = 0; i < name.length; i += 1) {
-      name[i] = name[i].charAt(0).toUpperCase() + name[i].substr(1);
-    }
-    return name.join('');
-  };
   const projectName = camelCase(match.params.name);
-
   const projectDetails = Project[projectName];
 
   if (!projectDetails) {
