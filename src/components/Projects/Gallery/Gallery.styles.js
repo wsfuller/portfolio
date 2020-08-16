@@ -33,9 +33,6 @@ const GalleryStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       fontSize: theme.typography.h5.fontSize
     }
-  },
-  demoButton: {
-    color: theme.colors.grayScale.white
   }
 }));
 

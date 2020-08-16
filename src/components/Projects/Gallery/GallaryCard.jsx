@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { event } from 'react-ga';
 
+import { useTheme } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -13,7 +14,8 @@ import GalleryStyles from './Gallery.styles';
 
 const GalleryCard = ({ project }) => {
   const classes = GalleryStyles();
-  const { card, title, media, demoButton } = classes;
+  const { card, title, media } = classes;
+  const theme = useTheme();
 
   return (
     <Card className={card}>
@@ -28,9 +30,8 @@ const GalleryCard = ({ project }) => {
       </CardContent>
       <CardActions>
         <Button
-          className={demoButton}
           style={{
-            color: 'white'
+            color: theme.colors.grayScale.white
           }}
           size="small"
           color="primary"
