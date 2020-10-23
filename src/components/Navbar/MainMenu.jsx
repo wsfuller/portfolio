@@ -57,7 +57,7 @@ const MainMenu = ({ location }) => {
 
   const contactLink = React.forwardRef((props, ref) => (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a href="mailto:williamsfuller@williamsfuller.com" {...props} ref={ref} />
+    <a href="mailto:wsfuller.dev@gmail.com" {...props} ref={ref} />
   ));
 
   // eslint-disable-next-line jsx-a11y/anchor-has-content
