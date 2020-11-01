@@ -19,7 +19,7 @@ const GalleryCard = ({ project }) => {
 
   return (
     <Card className={card}>
-      <CardMedia className={media} image={project.image} title={`${project.title} Logo`} />
+      <CardMedia className={media} image={project.image.default} title={`${project.title} Logo`} />
       <CardContent>
         <Typography className={title} gutterBottom variant="h5" component="h2">
           {project.title}
@@ -71,7 +71,9 @@ GalleryCard.propTypes = {
     id: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.shape({
+      default: PropTypes.string
+    }),
     demoUrl: PropTypes.string,
     gaEventLabels: PropTypes.shape({
       demo: PropTypes.string,
