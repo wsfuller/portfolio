@@ -25,7 +25,7 @@ const CompaniesList = ({ companies }) => {
       <Grid item xs key={company.name}>
         <Tooltip title={company.name} disableTouchListener>
           <div className={companyStyles}>
-            <Image src={company.image} alt={`${company.name} logo`} />
+            <Image src={company.image.default} alt={`${company.name} logo`} />
           </div>
         </Tooltip>
       </Grid>
@@ -43,7 +43,7 @@ const CompaniesList = ({ companies }) => {
         {companies.map(company => (
           <div key={company.name}>
             <div className={companyStyles}>
-              <Image src={company.image} alt={`${company.name} logo`} />
+              <Image src={company.image.default} alt={`${company.name} logo`} />
             </div>
           </div>
         ))}
@@ -58,7 +58,9 @@ CompaniesList.propTypes = {
   companies: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      image: PropTypes.string
+      image: PropTypes.shape({
+        default: PropTypes.string
+      })
     }).isRequired
   )
 };

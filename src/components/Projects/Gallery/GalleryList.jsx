@@ -53,7 +53,9 @@ GalleryList.propTypes = {
       id: PropTypes.string,
       title: PropTypes.string,
       description: PropTypes.string,
-      image: PropTypes.string,
+      image: PropTypes.shape({
+        default: PropTypes.string
+      }),
       demoUrl: PropTypes.string,
       gaEventLabels: PropTypes.shape({
         demo: PropTypes.string,

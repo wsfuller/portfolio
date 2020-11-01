@@ -19,7 +19,8 @@ const TimelineStyles = {
     height: theme.pxToRem(36),
     left: theme.pxToRem(-2),
     borderColor: theme.colors.primary.default,
-    background: theme.colors.grayScale.grayFour
+    background: theme.colors.grayScale.grayFour,
+    pointerEvents: 'none'
   },
   title: {
     color: theme.colors.grayScale.white,

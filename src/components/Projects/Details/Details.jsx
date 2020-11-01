@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Picture } from 'react-responsive-picture';
@@ -29,14 +30,18 @@ const Details = ({ project }) => {
 
   const heroContent = (
     <div className={heroOverlay}>
-      <Image customClass={heroImage} src={project.images.hero.logo} alt={`${project.name} logo`} />
+      <Image
+        customClass={heroImage}
+        src={project.images.hero.logo.default}
+        alt={`${project.name} logo`}
+      />
     </div>
   );
 
   return (
     <Fragment>
       <Hero
-        backgroundImage={project.images.hero.background}
+        backgroundImage={project.images.hero.background.default}
         altText={`Screenshot of the ${project.name} application`}
         content={heroContent}
       />
@@ -46,7 +51,7 @@ const Details = ({ project }) => {
             <Grid item xs={12} md={6}>
               <Picture
                 className={responsiveImage}
-                src={`${project.images.snapShots.at2x} 2x, ${project.images.snapShots.default} 1x`}
+                src={`${project.images.snapShots.at2x.default} 2x, ${project.images.snapShots.default} 1x`}
                 alt={`Screenshot of ${project.name} inside an illustration of a browser window`}
               />
             </Grid>
@@ -56,7 +61,6 @@ const Details = ({ project }) => {
                   About
                 </Typography>
                 <Typography className={description} variant="body1" align="justify" gutterBottom>
-                  {/* // eslint-disable-next-line react/no-danger */}
                   <span dangerouslySetInnerHTML={{ __html: project.description }} />
                 </Typography>
                 <Typography variant="body1" align="center">
@@ -110,12 +114,20 @@ Details.propTypes = {
     releaseDate: PropTypes.string,
     images: PropTypes.shape({
       hero: PropTypes.shape({
-        logo: PropTypes.string,
-        background: PropTypes.string
+        logo: PropTypes.shape({
+          default: PropTypes.string
+        }),
+        background: PropTypes.shape({
+          default: PropTypes.string
+        })
       }),
       snapShots: PropTypes.shape({
-        at2x: PropTypes.string,
-        default: PropTypes.string
+        at2x: PropTypes.shape({
+          default: PropTypes.string
+        }),
+        default: PropTypes.shape({
+          default: PropTypes.string
+        })
       })
     }),
     description: PropTypes.string,
