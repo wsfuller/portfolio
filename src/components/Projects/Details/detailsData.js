@@ -74,6 +74,14 @@ const ElderScrollsLegends = {
   gaEventLabels: {
     demo: 'Elder Scrolls Legends Demo',
     github: 'Elder Scrolls Legends GitHub'
+  },
+  metrics: {
+    lighthouse: {
+      performance: 98,
+      accessibility: 100,
+      bestPractices: 87,
+      seo: 100
+    }
   }
 };
 
@@ -107,6 +115,14 @@ const ReactStarWars = {
   gaEventLabels: {
     demo: 'React Star Wars Demo',
     github: 'React Star Wars GitHub'
+  },
+  metrics: {
+    lighthouse: {
+      performance: 96,
+      accessibility: 91,
+      bestPractices: 93,
+      seo: 100
+    }
   }
 };
 
@@ -140,6 +156,14 @@ const FetchDoggos = {
   gaEventLabels: {
     demo: 'FetchDoggos Demo',
     github: 'FetchDoggos GitHub'
+  },
+  metrics: {
+    lighthouse: {
+      performance: 94,
+      accessibility: 83,
+      bestPractices: 93,
+      seo: 80
+    }
   }
 };
 
@@ -206,6 +230,14 @@ const DarkRemnantsPodcast = {
   gaEventLabels: {
     demo: 'Dark Remnants Podcast Demo',
     github: 'Dark Remnants Podcast GitHub'
+  },
+  metrics: {
+    lighthouse: {
+      performance: 88,
+      accessibility: 96,
+      bestPractices: 80,
+      seo: 91
+    }
   }
 };
 
@@ -239,6 +271,14 @@ const ReactWeather = {
   gaEventLabels: {
     demo: 'React Weather Demo',
     github: 'React Weather GitHub'
+  },
+  metrics: {
+    lighthouse: {
+      performance: 94,
+      accessibility: 78,
+      bestPractices: 100,
+      seo: 100
+    }
   }
 };
 
