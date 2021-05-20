@@ -1,32 +1,20 @@
-/* eslint-disable react/no-danger */
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Picture } from 'react-responsive-picture';
-import { event } from 'react-ga';
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import { FaGithub } from 'react-icons/fa';
 
+import useDetailsStyles from './Details.styles';
+import About from '../About';
+import Lighthouse from '../Lighthouse';
 import Hero from '../../Hero';
 import Section from '../../Section';
 import Image from '../../Image';
-import DetailsStyles from './Details.styles';
 
 const Details = ({ project }) => {
-  const classes = DetailsStyles();
-  const {
-    heroOverlay,
-    heroImage,
-    responsiveImage,
-    about,
-    description,
-    projectButtons,
-    demoButton
-  } = classes;
+  const classes = useDetailsStyles();
+  const { heroOverlay, heroImage, responsiveImage } = classes;
 
   const heroContent = (
     <div className={heroOverlay}>
@@ -56,48 +44,22 @@ const Details = ({ project }) => {
               />
             </Grid>
             <Grid item xs={12} md={6}>
-              <div className={about}>
-                <Typography variant="h5" align="center" gutterBottom>
-                  About
-                </Typography>
-                <Typography className={description} variant="body1" align="justify" gutterBottom>
-                  <span dangerouslySetInnerHTML={{ __html: project.description }} />
-                </Typography>
-                <Typography variant="body1" align="center">
-                  {`Released: ${project.releaseDate}`}
-                </Typography>
-                <div className={projectButtons}>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    href={project.demoUrl}
-                    className={demoButton}
-                    onClick={() =>
-                      event({
-                        category: 'Project Profile',
-                        action: 'Click',
-                        label: project.gaEventLabels.demo
-                      })
-                    }
-                  >
-                    Demo
-                  </Button>
-                  <IconButton
-                    href={project.gitHubUrl}
-                    aria-label="Github"
-                    color="primary"
-                    onClick={() =>
-                      event({
-                        category: 'Project Profile',
-                        action: 'Click',
-                        label: project.gaEventLabels.github
-                      })
-                    }
-                  >
-                    <FaGithub />
-                  </IconButton>
-                </div>
-              </div>
+              <Grid container direction="column" alignItems="center">
+                <Grid item xs={12} sm={10}>
+                  <About
+                    description={project.description}
+                    releaseDate={project.releaseDate}
+                    demoUrl={project.demoUrl}
+                    gitHubUrl={project.gitHubUrl}
+                    gaEventLabels={project.gaEventLabels}
+                  />
+                </Grid>
+                {project?.metrics?.lighthouse && (
+                  <Grid item xs={12}>
+                    <Lighthouse metrics={project.metrics} />
+                  </Grid>
+                )}
+              </Grid>
             </Grid>
           </Grid>
         </Container>
@@ -108,10 +70,10 @@ const Details = ({ project }) => {
 
 Details.propTypes = {
   project: PropTypes.shape({
-    name: PropTypes.string,
-    demoUrl: PropTypes.string,
-    gitHubUrl: PropTypes.string,
-    releaseDate: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    demoUrl: PropTypes.string.isRequired,
+    gitHubUrl: PropTypes.string.isRequired,
+    releaseDate: PropTypes.string.isRequired,
     images: PropTypes.shape({
       hero: PropTypes.shape({
         logo: PropTypes.shape({
@@ -129,13 +91,29 @@ Details.propTypes = {
           default: PropTypes.string
         })
       })
-    }),
-    description: PropTypes.string,
+    }).isRequired,
+    description: PropTypes.string.isRequired,
     gaEventLabels: PropTypes.shape({
       demo: PropTypes.string,
       github: PropTypes.string
+    }).isRequired,
+    metrics: PropTypes.shape({
+      lighthouse: PropTypes.shape({
+        performance: PropTypes.number,
+        accessibility: PropTypes.number,
+        bestPractices: PropTypes.number,
+        seo: PropTypes.number
+      })
     })
-  }).isRequired
+  })
+};
+
+Details.defaultProps = {
+  project: PropTypes.shape({
+    metrics: PropTypes.shape({
+      lighthouse: PropTypes.shape({})
+    })
+  })
 };
 
 export default Details;
