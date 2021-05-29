@@ -1,5 +1,5 @@
 const elderScrollsLegends = require('../../../assets/images/projects/elder-scrolls-legends/card-logo.svg');
-const reactStarWars = require('../../../assets/images/projects/react-star-wars/card-logo.svg');
+// const reactStarWars = require('../../../assets/images/projects/react-star-wars/card-logo.svg');
 const fetchDoggos = require('../../../assets/images/projects/fetch-doggos/card-logo.svg');
 const resumeApi = require('../../../assets/images/projects/resume-api/card-logo.svg');
 const darkRemnantsPodcast = require('../../../assets/images/projects/dark-remnants-podcast/card-logo.svg');
@@ -21,18 +21,18 @@ module.exports = [
       learnMore: 'Elder Scrolls Legends Learn More'
     }
   },
-  {
-    id: 'react-star-wars',
-    title: 'React Star Wars',
-    description:
-      'React + GraphQL + Apollo Client powered by the GraphCMS GraphQL Star Wars API wrapper',
-    image: reactStarWars,
-    demoUrl: 'https://react-star-wars.netlify.com/',
-    gaEventLabels: {
-      demo: 'React Star Wars Demo',
-      learnMore: 'React Star Wars Learn More'
-    }
-  },
+  // {
+  //   id: 'react-star-wars',
+  //   title: 'React Star Wars',
+  //   description:
+  //     'React + GraphQL + Apollo Client powered by the GraphCMS GraphQL Star Wars API wrapper',
+  //   image: reactStarWars,
+  //   demoUrl: 'https://react-star-wars.netlify.com/',
+  //   gaEventLabels: {
+  //     demo: 'React Star Wars Demo',
+  //     learnMore: 'React Star Wars Learn More'
+  //   }
+  // },
   {
     id: 'fetch-doggos',
     title: 'FetchDoggos',
