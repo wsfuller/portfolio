@@ -21,18 +21,18 @@ module.exports = [
       learnMore: 'Elder Scrolls Legends Learn More'
     }
   },
-  {
-    id: 'react-star-wars',
-    title: 'React Star Wars',
-    description:
-      'React + GraphQL + Apollo Client powered by the GraphCMS GraphQL Star Wars API wrapper',
-    image: reactStarWars,
-    demoUrl: 'https://react-star-wars.netlify.com/',
-    gaEventLabels: {
-      demo: 'React Star Wars Demo',
-      learnMore: 'React Star Wars Learn More'
-    }
-  },
+  // {
+  //   id: 'react-star-wars',
+  //   title: 'React Star Wars',
+  //   description:
+  //     'React + GraphQL + Apollo Client powered by the GraphCMS GraphQL Star Wars API wrapper',
+  //   image: reactStarWars,
+  //   demoUrl: 'https://react-star-wars.netlify.com/',
+  //   gaEventLabels: {
+  //     demo: 'React Star Wars Demo',
+  //     learnMore: 'React Star Wars Learn More'
+  //   }
+  // },
   {
     id: 'fetch-doggos',
     title: 'FetchDoggos',

@@ -85,46 +85,46 @@ const ElderScrollsLegends = {
   }
 };
 
-const ReactStarWars = {
-  name: 'React Star Wars',
-  demoUrl: 'https://react-star-wars.netlify.com/',
-  gitHubUrl: 'https://github.com/wsfuller/react-star-wars',
-  releaseDate: 'Mid 2019',
-  images: {
-    hero: {
-      logo: reactStarWarsHeroLogo,
-      background: reactStarWarsHeroBg
-    },
-    snapShots: {
-      default: reactStarWarsSnapshot,
-      at2x: reactStarWarsSnapshot2x
-    },
-    tools: [
-      {
-        icon: 'assets/images/icons/react.svg',
-        name: 'React'
-      },
-      {
-        icon: 'assets/images/icons/redux.svg',
-        name: 'Redux'
-      }
-    ]
-  },
-  description:
-    'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Originally built with using the RESTful version of SWAPI this app quickly pivoted to the GraphCMS SWAPI GraphQL port. GraphQL was ultimately chosen over the traditional RESTful service because of the ability to build out profiles in a single HTTP request versus several. <br /><br /> On top of the other tools mentioned, the UI was built using Material-UI with JSS for a completely JavaScript driven application.',
-  gaEventLabels: {
-    demo: 'React Star Wars Demo',
-    github: 'React Star Wars GitHub'
-  },
-  metrics: {
-    lighthouse: {
-      performance: 96,
-      accessibility: 91,
-      bestPractices: 93,
-      seo: 100
-    }
-  }
-};
+// const ReactStarWars = {
+//   name: 'React Star Wars',
+//   demoUrl: 'https://react-star-wars.netlify.com/',
+//   gitHubUrl: 'https://github.com/wsfuller/react-star-wars',
+//   releaseDate: 'Mid 2019',
+//   images: {
+//     hero: {
+//       logo: reactStarWarsHeroLogo,
+//       background: reactStarWarsHeroBg
+//     },
+//     snapShots: {
+//       default: reactStarWarsSnapshot,
+//       at2x: reactStarWarsSnapshot2x
+//     },
+//     tools: [
+//       {
+//         icon: 'assets/images/icons/react.svg',
+//         name: 'React'
+//       },
+//       {
+//         icon: 'assets/images/icons/redux.svg',
+//         name: 'Redux'
+//       }
+//     ]
+//   },
+//   description:
+//     'React Star Wars is a simple application built with React, Apollo Client, GraphQL, and the Star Wars API (aka SWAPI). Originally built with using the RESTful version of SWAPI this app quickly pivoted to the GraphCMS SWAPI GraphQL port. GraphQL was ultimately chosen over the traditional RESTful service because of the ability to build out profiles in a single HTTP request versus several. <br /><br /> On top of the other tools mentioned, the UI was built using Material-UI with JSS for a completely JavaScript driven application.',
+//   gaEventLabels: {
+//     demo: 'React Star Wars Demo',
+//     github: 'React Star Wars GitHub'
+//   },
+//   metrics: {
+//     lighthouse: {
+//       performance: 96,
+//       accessibility: 91,
+//       bestPractices: 93,
+//       seo: 100
+//     }
+//   }
+// };
 
 const FetchDoggos = {
   name: 'FetchDoggos',
@@ -383,7 +383,7 @@ const Uwatch = {
 
 module.exports = {
   ElderScrollsLegends,
-  ReactStarWars,
+  // ReactStarWars,
   FetchDoggos,
   ResumeApi,
   DarkRemnantsPodcast,
