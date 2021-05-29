@@ -1,5 +1,5 @@
 const elderScrollsLegends = require('../../../assets/images/projects/elder-scrolls-legends/card-logo.svg');
-const reactStarWars = require('../../../assets/images/projects/react-star-wars/card-logo.svg');
+// const reactStarWars = require('../../../assets/images/projects/react-star-wars/card-logo.svg');
 const fetchDoggos = require('../../../assets/images/projects/fetch-doggos/card-logo.svg');
 const resumeApi = require('../../../assets/images/projects/resume-api/card-logo.svg');
 const darkRemnantsPodcast = require('../../../assets/images/projects/dark-remnants-podcast/card-logo.svg');

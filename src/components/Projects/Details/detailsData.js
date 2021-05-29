@@ -4,10 +4,10 @@ const elderScrollsLegendsHeroLogo = require('../../../assets/images/projects/eld
 const elderScrollsLegendsSnapshot = require('../../../assets/images/projects/elder-scrolls-legends/snapshot.jpg');
 const elderScrollsLegendsSnapshot2x = require('../../../assets/images/projects/elder-scrolls-legends/snapshot@2x.jpg');
 // React Star Wars
-const reactStarWarsHeroBg = require('../../../assets/images/projects/react-star-wars/hero-bg.jpg');
-const reactStarWarsHeroLogo = require('../../../assets/images/projects/react-star-wars/hero-logo.svg');
-const reactStarWarsSnapshot = require('../../../assets/images/projects/react-star-wars/snapshot.jpg');
-const reactStarWarsSnapshot2x = require('../../../assets/images/projects/react-star-wars/snapshot@2x.jpg');
+// const reactStarWarsHeroBg = require('../../../assets/images/projects/react-star-wars/hero-bg.jpg');
+// const reactStarWarsHeroLogo = require('../../../assets/images/projects/react-star-wars/hero-logo.svg');
+// const reactStarWarsSnapshot = require('../../../assets/images/projects/react-star-wars/snapshot.jpg');
+// const reactStarWarsSnapshot2x = require('../../../assets/images/projects/react-star-wars/snapshot@2x.jpg');
 // Fetch Doggos
 const fetchDoggosHeroBg = require('../../../assets/images/projects/fetch-doggos/hero-bg.jpg');
 const fetchDoggosHeroLogo = require('../../../assets/images/projects/fetch-doggos/hero-logo.svg');
