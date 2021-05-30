@@ -34,10 +34,10 @@ const ghostJackEntertainmentHeroLogo = require('../../../assets/images/projects/
 const ghostJackEntertainmentSnapshot = require('../../../assets/images/projects/ghost-jack-entertainment/snapshot.jpg');
 const ghostJackEntertainmentSnapshot2x = require('../../../assets/images/projects/ghost-jack-entertainment/snapshot@2x.jpg');
 // Movie Finder
-const movieFinderHeroBg = require('../../../assets/images/projects/movie-finder/hero-bg.jpg');
-const movieFinderHeroLogo = require('../../../assets/images/projects/movie-finder/hero-logo.svg');
-const movieFinderSnapshot = require('../../../assets/images/projects/movie-finder/snapshot.jpg');
-const movieFinderSnapshot2x = require('../../../assets/images/projects/movie-finder/snapshot@2x.jpg');
+// const movieFinderHeroBg = require('../../../assets/images/projects/movie-finder/hero-bg.jpg');
+// const movieFinderHeroLogo = require('../../../assets/images/projects/movie-finder/hero-logo.svg');
+// const movieFinderSnapshot = require('../../../assets/images/projects/movie-finder/snapshot.jpg');
+// const movieFinderSnapshot2x = require('../../../assets/images/projects/movie-finder/snapshot@2x.jpg');
 // uWatch
 const uWatchHeroBg = require('../../../assets/images/projects/uwatch/hero-bg.jpg');
 const uWatchHeroLogo = require('../../../assets/images/projects/uwatch/hero-logo.svg');
@@ -315,38 +315,38 @@ const GhostJackEntertainment = {
   }
 };
 
-const MovieFinder = {
-  name: 'Movie Finder',
-  demoUrl: 'https://wsfuller.github.io/movieFinder/',
-  gitHubUrl: 'https://github.com/wsfuller/movieFinder',
-  releaseDate: 'Mid 2014',
-  images: {
-    hero: {
-      logo: movieFinderHeroLogo,
-      background: movieFinderHeroBg
-    },
-    snapShots: {
-      default: movieFinderSnapshot,
-      at2x: movieFinderSnapshot2x
-    },
-    tools: [
-      {
-        icon: 'assets/images/icons/react.svg',
-        name: 'React'
-      },
-      {
-        icon: 'assets/images/icons/redux.svg',
-        name: 'Redux'
-      }
-    ]
-  },
-  description:
-    'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.',
-  gaEventLabels: {
-    demo: 'Movie Finder Demo',
-    github: 'Movie Finder GitHub'
-  }
-};
+// const MovieFinder = {
+//   name: 'Movie Finder',
+//   demoUrl: 'https://wsfuller.github.io/movieFinder/',
+//   gitHubUrl: 'https://github.com/wsfuller/movieFinder',
+//   releaseDate: 'Mid 2014',
+//   images: {
+//     hero: {
+//       logo: movieFinderHeroLogo,
+//       background: movieFinderHeroBg
+//     },
+//     snapShots: {
+//       default: movieFinderSnapshot,
+//       at2x: movieFinderSnapshot2x
+//     },
+//     tools: [
+//       {
+//         icon: 'assets/images/icons/react.svg',
+//         name: 'React'
+//       },
+//       {
+//         icon: 'assets/images/icons/redux.svg',
+//         name: 'Redux'
+//       }
+//     ]
+//   },
+//   description:
+//     'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.',
+//   gaEventLabels: {
+//     demo: 'Movie Finder Demo',
+//     github: 'Movie Finder GitHub'
+//   }
+// };
 
 const Uwatch = {
   name: 'uWatch',
@@ -389,6 +389,6 @@ module.exports = {
   DarkRemnantsPodcast,
   ReactWeather,
   GhostJackEntertainment,
-  MovieFinder,
+  // MovieFinder,
   Uwatch
 };
