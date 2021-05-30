@@ -6,7 +6,7 @@ const darkRemnantsPodcast = require('../../../assets/images/projects/dark-remnan
 const reactWeather = require('../../../assets/images/projects/react-weather/card-logo.svg');
 const ghostJackEntertainment = require('../../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
 // const angularPokedex = require('../../assets/images/projects/angular-pokedex/card-logo.svg');
-const movieFinder = require('../../../assets/images/projects/movie-finder/card-logo.svg');
+// const movieFinder = require('../../../assets/images/projects/movie-finder/card-logo.svg');
 const uWatch = require('../../../assets/images/projects/uwatch/card-logo.svg');
 
 module.exports = [
@@ -95,17 +95,17 @@ module.exports = [
   //   image: angularPokedex,
   //   demoUrl: 'https://www.williamsfuller.com/projects/angular-pokedex/'
   // },
-  {
-    id: 'movie-finder',
-    title: 'Movie Finder',
-    description: 'Single page site using HTML, Sass, and jQuery to fetch data from themoviedb.org',
-    image: movieFinder,
-    demoUrl: 'https://wsfuller.github.io/movieFinder/',
-    gaEventLabels: {
-      demo: 'Movie Finder Demo',
-      learnMore: 'Movie Finder Learn More'
-    }
-  },
+  // {
+  //   id: 'movie-finder',
+  //   title: 'Movie Finder',
+  //   description: 'Single page site using HTML, Sass, and jQuery to fetch data from themoviedb.org',
+  //   image: movieFinder,
+  //   demoUrl: 'https://wsfuller.github.io/movieFinder/',
+  //   gaEventLabels: {
+  //     demo: 'Movie Finder Demo',
+  //     learnMore: 'Movie Finder Learn More'
+  //   }
+  // },
   {
     id: 'uwatch',
     title: 'uWatch',
