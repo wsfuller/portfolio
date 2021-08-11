@@ -29,20 +29,20 @@ const reactWeatherHeroLogo = require('../../../assets/images/projects/react-weat
 const reactWeatherSnapshot = require('../../../assets/images/projects/react-weather/snapshot.jpg');
 const reactWeatherSnapshot2x = require('../../../assets/images/projects/react-weather/snapshot@2x.jpg');
 // Ghost Jack Entertainment
-const ghostJackEntertainmentHeroBg = require('../../../assets/images/projects/ghost-jack-entertainment/hero-bg.jpg');
-const ghostJackEntertainmentHeroLogo = require('../../../assets/images/projects/ghost-jack-entertainment/hero-logo.svg');
-const ghostJackEntertainmentSnapshot = require('../../../assets/images/projects/ghost-jack-entertainment/snapshot.jpg');
-const ghostJackEntertainmentSnapshot2x = require('../../../assets/images/projects/ghost-jack-entertainment/snapshot@2x.jpg');
+// const ghostJackEntertainmentHeroBg = require('../../../assets/images/projects/ghost-jack-entertainment/hero-bg.jpg');
+// const ghostJackEntertainmentHeroLogo = require('../../../assets/images/projects/ghost-jack-entertainment/hero-logo.svg');
+// const ghostJackEntertainmentSnapshot = require('../../../assets/images/projects/ghost-jack-entertainment/snapshot.jpg');
+// const ghostJackEntertainmentSnapshot2x = require('../../../assets/images/projects/ghost-jack-entertainment/snapshot@2x.jpg');
 // Movie Finder
-// const movieFinderHeroBg = require('../../../assets/images/projects/movie-finder/hero-bg.jpg');
-// const movieFinderHeroLogo = require('../../../assets/images/projects/movie-finder/hero-logo.svg');
-// const movieFinderSnapshot = require('../../../assets/images/projects/movie-finder/snapshot.jpg');
-// const movieFinderSnapshot2x = require('../../../assets/images/projects/movie-finder/snapshot@2x.jpg');
+const movieFinderHeroBg = require('../../../assets/images/projects/movie-finder/hero-bg.jpg');
+const movieFinderHeroLogo = require('../../../assets/images/projects/movie-finder/hero-logo.svg');
+const movieFinderSnapshot = require('../../../assets/images/projects/movie-finder/snapshot.jpg');
+const movieFinderSnapshot2x = require('../../../assets/images/projects/movie-finder/snapshot@2x.jpg');
 // uWatch
-const uWatchHeroBg = require('../../../assets/images/projects/uwatch/hero-bg.jpg');
-const uWatchHeroLogo = require('../../../assets/images/projects/uwatch/hero-logo.svg');
-const uWatchSnapshot = require('../../../assets/images/projects/uwatch/snapshot.jpg');
-const uWatchSnapshot2x = require('../../../assets/images/projects/uwatch/snapshot@2x.jpg');
+// const uWatchHeroBg = require('../../../assets/images/projects/uwatch/hero-bg.jpg');
+// const uWatchHeroLogo = require('../../../assets/images/projects/uwatch/hero-logo.svg');
+// const uWatchSnapshot = require('../../../assets/images/projects/uwatch/snapshot.jpg');
+// const uWatchSnapshot2x = require('../../../assets/images/projects/uwatch/snapshot@2x.jpg');
 
 const ElderScrollsLegends = {
   name: 'Elder Scrolls Legends',
@@ -282,52 +282,19 @@ const ReactWeather = {
   }
 };
 
-const GhostJackEntertainment = {
-  name: 'Ghost Jack Entertainment',
-  demoUrl: 'https://ghostjackent.com/',
-  gitHubUrl: 'https://github.com/wsfuller/ghostjack',
-  releaseDate: 'Mid 2016',
-  images: {
-    hero: {
-      logo: ghostJackEntertainmentHeroLogo,
-      background: ghostJackEntertainmentHeroBg
-    },
-    snapShots: {
-      default: ghostJackEntertainmentSnapshot,
-      at2x: ghostJackEntertainmentSnapshot2x
-    },
-    tools: [
-      {
-        icon: 'assets/images/icons/react.svg',
-        name: 'React'
-      },
-      {
-        icon: 'assets/images/icons/redux.svg',
-        name: 'Redux'
-      }
-    ]
-  },
-  description:
-    'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.',
-  gaEventLabels: {
-    demo: 'Ghost Jack Entertainment Demo',
-    github: 'Ghost Jack Entertainment GitHub'
-  }
-};
-
-// const MovieFinder = {
-//   name: 'Movie Finder',
-//   demoUrl: 'https://wsfuller.github.io/movieFinder/',
-//   gitHubUrl: 'https://github.com/wsfuller/movieFinder',
-//   releaseDate: 'Mid 2014',
+// const GhostJackEntertainment = {
+//   name: 'Ghost Jack Entertainment',
+//   demoUrl: 'https://ghostjackent.com/',
+//   gitHubUrl: 'https://github.com/wsfuller/ghostjack',
+//   releaseDate: 'Mid 2016',
 //   images: {
 //     hero: {
-//       logo: movieFinderHeroLogo,
-//       background: movieFinderHeroBg
+//       logo: ghostJackEntertainmentHeroLogo,
+//       background: ghostJackEntertainmentHeroBg
 //     },
 //     snapShots: {
-//       default: movieFinderSnapshot,
-//       at2x: movieFinderSnapshot2x
+//       default: ghostJackEntertainmentSnapshot,
+//       at2x: ghostJackEntertainmentSnapshot2x
 //     },
 //     tools: [
 //       {
@@ -343,24 +310,24 @@ const GhostJackEntertainment = {
 //   description:
 //     'Movie Finder was a personal project to start learning APIs. The goal of this project was to provide a user input and retrieve a primary movie poster, title, and description as well as other related movie titles and posters. If a poster is not available a placeholder will be put in place of the broken image. Using The MovieDB I was able to create an API token and submit GET requests using jQuery to their API. <br/><br/>This application was built using jQuery for all the AJAX requests and using newly learned Sass. This was an incredible learning experience and something that can be expanded on greatly with deeper functionality using new frameworks like Angular or React.',
 //   gaEventLabels: {
-//     demo: 'Movie Finder Demo',
-//     github: 'Movie Finder GitHub'
+//     demo: 'Ghost Jack Entertainment Demo',
+//     github: 'Ghost Jack Entertainment GitHub'
 //   }
 // };
 
-const Uwatch = {
-  name: 'uWatch',
-  demoUrl: 'https://wsfuller.github.io/uWatch/',
-  gitHubUrl: 'https://github.com/wsfuller/uWatch',
-  releaseDate: 'Late 2013',
+const MovieFinder = {
+  name: 'Movie Finder',
+  demoUrl: 'https://wsf-moviefinder.netlify.app/',
+  gitHubUrl: 'https://github.com/wsfuller/MovieFinder',
+  releaseDate: 'Mid 2021',
   images: {
     hero: {
-      logo: uWatchHeroLogo,
-      background: uWatchHeroBg
+      logo: movieFinderHeroLogo,
+      background: movieFinderHeroBg
     },
     snapShots: {
-      default: uWatchSnapshot,
-      at2x: uWatchSnapshot2x
+      default: movieFinderSnapshot,
+      at2x: movieFinderSnapshot2x
     },
     tools: [
       {
@@ -374,12 +341,53 @@ const Uwatch = {
     ]
   },
   description:
-    'For one of my courses at the AICSF, Emerging Technologies, we were assigned a project to develop a site showcasing a bleeding edge product. With all the hype around the Apple Watch that was rumored to be coming out for quite awhile at that time, my partner for the project and I decided to do the ultimate smart watch. This was a great experience in really working with Bootstrap and font icons from Font Awesome. <br /><br/>For this project I was tasked with development, wire framing, and technology specifications. The site was designed using Photoshop, built using CSS3, HTML5, Bootstrap, jQuery and PHP. This project really reminds me of the evolution of not only my skills but the maturing of front end technologies that have taken place over the last several years',
+    'MovieFinder is a small React + Redux application using TypeScript and Microsoft\'s Fluent UI. This app\'s data is accessed by using The Movie Database API. The goal of this application is to have users explore movie titles and add those titles to a "watch later list" which stores a small bit of data in localStorage for cacheing purposes. Event tracking is also incorporated using Google Tag Manager to help better understand user behanvior through Google Universal Analytics',
   gaEventLabels: {
-    demo: 'uWatch Demo',
-    github: 'uWatch GitHub'
+    demo: 'Movie Finder Demo',
+    github: 'Movie Finder GitHub'
+  },
+  metrics: {
+    lighthouse: {
+      performance: 92,
+      accessibility: 90,
+      bestPractices: 93,
+      seo: 100
+    }
   }
 };
+
+// const Uwatch = {
+//   name: 'uWatch',
+//   demoUrl: 'https://wsfuller.github.io/uWatch/',
+//   gitHubUrl: 'https://github.com/wsfuller/uWatch',
+//   releaseDate: 'Late 2013',
+//   images: {
+//     hero: {
+//       logo: uWatchHeroLogo,
+//       background: uWatchHeroBg
+//     },
+//     snapShots: {
+//       default: uWatchSnapshot,
+//       at2x: uWatchSnapshot2x
+//     },
+//     tools: [
+//       {
+//         icon: 'assets/images/icons/react.svg',
+//         name: 'React'
+//       },
+//       {
+//         icon: 'assets/images/icons/redux.svg',
+//         name: 'Redux'
+//       }
+//     ]
+//   },
+//   description:
+//     'For one of my courses at the AICSF, Emerging Technologies, we were assigned a project to develop a site showcasing a bleeding edge product. With all the hype around the Apple Watch that was rumored to be coming out for quite awhile at that time, my partner for the project and I decided to do the ultimate smart watch. This was a great experience in really working with Bootstrap and font icons from Font Awesome. <br /><br/>For this project I was tasked with development, wire framing, and technology specifications. The site was designed using Photoshop, built using CSS3, HTML5, Bootstrap, jQuery and PHP. This project really reminds me of the evolution of not only my skills but the maturing of front end technologies that have taken place over the last several years',
+//   gaEventLabels: {
+//     demo: 'uWatch Demo',
+//     github: 'uWatch GitHub'
+//   }
+// };
 
 module.exports = {
   ElderScrollsLegends,
@@ -388,7 +396,5 @@ module.exports = {
   ResumeApi,
   DarkRemnantsPodcast,
   ReactWeather,
-  GhostJackEntertainment,
-  // MovieFinder,
-  Uwatch
+  MovieFinder
 };
