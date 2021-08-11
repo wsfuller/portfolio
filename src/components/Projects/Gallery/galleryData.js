@@ -4,12 +4,23 @@ const fetchDoggos = require('../../../assets/images/projects/fetch-doggos/card-l
 const resumeApi = require('../../../assets/images/projects/resume-api/card-logo.svg');
 const darkRemnantsPodcast = require('../../../assets/images/projects/dark-remnants-podcast/card-logo.svg');
 const reactWeather = require('../../../assets/images/projects/react-weather/card-logo.svg');
-const ghostJackEntertainment = require('../../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
+// const ghostJackEntertainment = require('../../../assets/images/projects/ghost-jack-entertainment/card-logo.svg');
 // const angularPokedex = require('../../assets/images/projects/angular-pokedex/card-logo.svg');
-// const movieFinder = require('../../../assets/images/projects/movie-finder/card-logo.svg');
-const uWatch = require('../../../assets/images/projects/uwatch/card-logo.svg');
+const movieFinder = require('../../../assets/images/projects/movie-finder/card-logo.svg');
+// const uWatch = require('../../../assets/images/projects/uwatch/card-logo.svg');
 
 module.exports = [
+  {
+    id: 'movie-finder',
+    title: 'Movie Finder',
+    description: 'React, Redux, TypeScript, Fluent UI w/The Movie Database API',
+    image: movieFinder,
+    demoUrl: 'https://wsf-moviefinder.netlify.app/',
+    gaEventLabels: {
+      demo: 'Movie Finder Demo',
+      learnMore: 'Movie Finder Learn More'
+    }
+  },
   {
     id: 'elder-scrolls-legends',
     title: 'Elder Scrolls Legends',
@@ -76,18 +87,18 @@ module.exports = [
       demo: 'React Weather Demo',
       learnMore: 'React Weather Learn More'
     }
-  },
-  {
-    id: 'ghost-jack-entertainment',
-    title: 'GhostJack Entertainment',
-    description: 'Single page client site using HTML, Sass, and jQuery',
-    image: ghostJackEntertainment,
-    demoUrl: 'http://ghostjackent.com/',
-    gaEventLabels: {
-      demo: 'Ghost Jack Entertainment Demo',
-      learnMore: 'Ghost Jack Entertainment Learn More'
-    }
-  },
+  }
+  // {
+  //   id: 'ghost-jack-entertainment',
+  //   title: 'GhostJack Entertainment',
+  //   description: 'Single page client site using HTML, Sass, and jQuery',
+  //   image: ghostJackEntertainment,
+  //   demoUrl: 'http://ghostjackent.com/',
+  //   gaEventLabels: {
+  //     demo: 'Ghost Jack Entertainment Demo',
+  //     learnMore: 'Ghost Jack Entertainment Learn More'
+  //   }
+  // },
   // {
   //   id: 'angular-pokedex',
   //   title: 'Angular-Pokedex',
@@ -96,25 +107,14 @@ module.exports = [
   //   demoUrl: 'https://www.williamsfuller.com/projects/angular-pokedex/'
   // },
   // {
-  //   id: 'movie-finder',
-  //   title: 'Movie Finder',
-  //   description: 'Single page site using HTML, Sass, and jQuery to fetch data from themoviedb.org',
-  //   image: movieFinder,
-  //   demoUrl: 'https://wsfuller.github.io/movieFinder/',
+  //   id: 'uwatch',
+  //   title: 'uWatch',
+  //   description: 'Single page site using HTML, Sass, jQuery, and Bootstrap',
+  //   image: uWatch,
+  //   demoUrl: 'https://wsfuller.github.io/uWatch/',
   //   gaEventLabels: {
-  //     demo: 'Movie Finder Demo',
-  //     learnMore: 'Movie Finder Learn More'
+  //     demo: 'uWatch Demo',
+  //     learnMore: 'uWatch Learn More'
   //   }
-  // },
-  {
-    id: 'uwatch',
-    title: 'uWatch',
-    description: 'Single page site using HTML, Sass, jQuery, and Bootstrap',
-    image: uWatch,
-    demoUrl: 'https://wsfuller.github.io/uWatch/',
-    gaEventLabels: {
-      demo: 'uWatch Demo',
-      learnMore: 'uWatch Learn More'
-    }
-  }
+  // }
 ];
