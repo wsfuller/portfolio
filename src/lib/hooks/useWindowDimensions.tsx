@@ -6,7 +6,7 @@ function getWindowDimensions() {
   return { width, height };
 }
 
-function WindowDimensions() {
+function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   function handleResize() {
@@ -33,4 +33,4 @@ function WindowDimensions() {
   return windowDimensions;
 }
 
-export default WindowDimensions;
+export default useWindowDimensions;
