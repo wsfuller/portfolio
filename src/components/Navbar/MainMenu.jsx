@@ -22,13 +22,13 @@ const MainMenu = ({ location }) => {
   const classes = MainMenuStyles();
   const { root, intro, introImage, title, subtitle, social, linkText } = classes;
 
-  const projectsLink = React.forwardRef((props, ref) => (
-    <AnchorLink href="#projects" offset={() => 50} {...props} ref={ref} />
-  ));
+  // const projectsLink = React.forwardRef((props, ref) => (
+  //   <AnchorLink href="#projects" offset={() => 50} {...props} ref={ref} />
+  // ));
 
-  const aboutMeLink = React.forwardRef((props, ref) => (
-    <AnchorLink href="#about-me" offset={() => 50} {...props} ref={ref} />
-  ));
+  // const aboutMeLink = React.forwardRef((props, ref) => (
+  //   <AnchorLink href="#about-me" offset={() => 50} {...props} ref={ref} />
+  // ));
 
   const renderScrollingOrAnchorLinks = () => {
     if (location.pathname !== '/') {
@@ -55,17 +55,18 @@ const MainMenu = ({ location }) => {
     );
   };
 
-  const contactLink = React.forwardRef((props, ref) => (
-    // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a href="mailto:wsfuller.dev@gmail.com" {...props} ref={ref} />
-  ));
+  // const contactLink = React.forwardRef((props, ref) => (
+  //   // eslint-disable-next-line jsx-a11y/anchor-has-content
+  //   <a href="mailto:wsfuller.dev@gmail.com" {...props} ref={ref} />
+  // ));
 
   // eslint-disable-next-line jsx-a11y/anchor-has-content
-  const resumeLink = React.forwardRef((props, ref) => <a href={Resume} {...props} ref={ref} />);
+  // const resumeLink = React.forwardRef((props, ref) => <a href={Resume} {...props} ref={ref} />);
 
   return (
     <div className={root}>
-      <div className={intro}>
+      MAIN MENU
+      {/* <div className={intro}>
         <Picture
           className={introImage}
           src={`${Me2x} 2x, ${Me} 1x`}
@@ -102,15 +103,15 @@ const MainMenu = ({ location }) => {
         <ListItem button component={resumeLink}>
           <ListItemText className={linkText} primary="Resume" />
         </ListItem>
-      </List>
+      </List> */}
     </div>
   );
 };
 
 MainMenu.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string
-  }).isRequired
+    pathname: PropTypes.string,
+  }).isRequired,
 };
 
 export default withRouter(MainMenu);

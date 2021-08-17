@@ -54,4 +54,5 @@ NotFound.propTypes = {
   }).isRequired,
 };
 
-export default withRouter(NotFound);
+// export default withRouter(NotFound);
+export default NotFound;
