@@ -17,7 +17,6 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
           <meta name="HandheldFriendly" content="true" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           {/* manifest.json provides metadata used when your web app is installed on a
               user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
           */}

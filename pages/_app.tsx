@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Fragment>
       <Head>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
