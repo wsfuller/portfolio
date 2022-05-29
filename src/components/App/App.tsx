@@ -1,5 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 
-const App: React.FC = () => <div>Hello i are app so now</div>;
+import { GlobalStyles, darkTheme, lightTheme } from '../../styles';
+
+const App: React.FC = () => {
+  const [theme, setTheme] = useState('dark');
+
+  const themeToggle = () => (theme === 'light' ? setTheme('dark') : setTheme('light'));
+
+  return (
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <div>
+        Hello World
+        <button type="button" onClick={themeToggle}>
+          Toggle Theme
+        </button>
+      </div>
+    </ThemeProvider>
+  );
+};
 
 export default App;
