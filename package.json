@@ -2,10 +2,6 @@
   "name": "wsf-portfolio",
   "version": "2.0.0",
   "private": true,
-  "engines": {
-    "node": ">=16.14.2",
-    "npm": ">=8.5.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
