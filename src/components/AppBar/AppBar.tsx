@@ -18,7 +18,7 @@ const AppBar: React.FC<AppBarProps> = ({ themeToggle }) => {
         <button type="button" onClick={themeToggle}>
           {theme.mode === 'light' ? <FiMoon /> : <FiSun />}
         </button>
-        <button type="button" onClick={() => console.log('open menu')}>
+        <button type="button">
           <FiMenu />
         </button>
       </StyledAppBarActions>
