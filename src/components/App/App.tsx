@@ -3,6 +3,8 @@ import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles, darkTheme, lightTheme } from '../../styles';
 
+import AppBar from '../AppBar';
+
 const App: React.FC = () => {
   const [theme, setTheme] = useState('dark');
 
@@ -11,12 +13,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <div>
-        Hello World
-        <button type="button" onClick={themeToggle}>
-          Toggle Theme
-        </button>
-      </div>
+      <AppBar themeToggle={themeToggle} />
     </ThemeProvider>
   );
 };
