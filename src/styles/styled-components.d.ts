@@ -42,6 +42,7 @@ declare module 'styled-components' {
   }
 
   export interface ThemeFoundations {
+    baseFontSize: number;
     baseUnit: number;
     breakpoints: Breakpoints;
     maxContentWidth: number;
@@ -55,6 +56,8 @@ declare module 'styled-components' {
       alternate?: Typography;
     };
     pxToRem: (value: number) => string;
+    // Simplify theme base unit conversion to relative units
+    baseUnitsToRem: (value: number) => string;
   }
 
   export interface DefaultTheme {

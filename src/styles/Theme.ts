@@ -39,8 +39,13 @@ const branding: Branding = {
   primaryPlus200: '#5Fcdcd',
 };
 
-const themeFoundations: ThemeFoundations = {
-  baseUnit: 4,
+const baseUnit = 4;
+// Default is 16 to represent default font size setting in Chrome
+const baseFontSize = baseUnit * 4;
+
+export const themeFoundations: ThemeFoundations = {
+  baseFontSize,
+  baseUnit,
   breakpoints,
   maxContentWidth: 1200,
   appBarHeight: '3rem',
@@ -62,7 +67,8 @@ const themeFoundations: ThemeFoundations = {
       },
     },
   },
-  pxToRem: (value: number) => `${value / 16}rem`,
+  baseUnitsToRem: (value: number) => `${(value * baseUnit) / baseFontSize}rem`,
+  pxToRem: (value: number) => `${value / baseFontSize}rem`,
 };
 
 export const darkTheme: DefaultTheme = {
