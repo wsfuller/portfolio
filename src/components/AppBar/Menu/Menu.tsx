@@ -78,8 +78,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, cycleMenu }) => {
                 src={SteveAvatar}
                 srcSet={`${SteveAvatar} 1x, ${SteveAvatar2x} 2x`}
                 alt="Cartoon illustration of William S Fuller"
-                width="6.25rem"
-                height="700rem"
               />
               {/* <Branding /> */}
               {/* Logo */}
