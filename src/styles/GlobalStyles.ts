@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: ${({ theme }) => theme.body};
-    transition: all 0.5s linear;
   }
 `;
 

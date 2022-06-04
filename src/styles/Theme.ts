@@ -2,9 +2,18 @@ import {
   DefaultTheme,
   ThemeFoundations,
   Breakpoints,
+  TransitionSpeeds,
+  ZIndex,
+  BorderRadius,
   Grayscale,
   Branding,
 } from 'styled-components';
+
+const baseUnit = 4;
+// Default is 16 to represent default font size setting in Chrome
+const baseFontSize = baseUnit * 4;
+const baseUnitsToRem = (value: number): string => `${(value * baseUnit) / baseFontSize}rem`;
+const pxToRem = (value: number): string => `${value / baseFontSize}rem`;
 
 const breakpoints: Breakpoints = {
   small: 576,
@@ -12,6 +21,36 @@ const breakpoints: Breakpoints = {
   large: 992,
   xLarge: 1200,
   xxLarge: 1400,
+};
+
+const transitionSpeeds: TransitionSpeeds = {
+  xSlow: '750ms',
+  slow: '500ms',
+  default: '350ms',
+  fast: '250ms',
+  xFast: '150ms',
+};
+
+const borderRadius: BorderRadius = {
+  small: baseUnitsToRem(1),
+  medium: baseUnitsToRem(2),
+  large: baseUnitsToRem(3),
+  round: '100%',
+};
+
+const zIndex: ZIndex = {
+  zero: 0,
+  one: 10,
+  two: 20,
+  three: 30,
+  four: 40,
+  five: 50,
+  six: 60,
+  seven: 70,
+  eight: 80,
+  nine: 90,
+  ten: 100,
+  max: 1000,
 };
 
 const grayscale: Grayscale = {
@@ -39,14 +78,13 @@ const branding: Branding = {
   primaryPlus200: '#5Fcdcd',
 };
 
-const baseUnit = 4;
-// Default is 16 to represent default font size setting in Chrome
-const baseFontSize = baseUnit * 4;
-
 export const themeFoundations: ThemeFoundations = {
   baseFontSize,
   baseUnit,
   breakpoints,
+  transitionSpeeds,
+  borderRadius,
+  zIndex,
   maxContentWidth: 1200,
   appBarHeight: '3rem',
   colors: {
@@ -67,8 +105,8 @@ export const themeFoundations: ThemeFoundations = {
       },
     },
   },
-  baseUnitsToRem: (value: number) => `${(value * baseUnit) / baseFontSize}rem`,
-  pxToRem: (value: number) => `${value / baseFontSize}rem`,
+  baseUnitsToRem,
+  pxToRem,
 };
 
 export const darkTheme: DefaultTheme = {

@@ -16,7 +16,7 @@ const StyledAppBarActions = styled.div`
   align-items: center;
 
   & button {
-    margin-right: ${({ theme }) => `${theme.tokens.baseUnit * 2}px`};
+    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
 
     &:last-child {
       margin-right: 0;

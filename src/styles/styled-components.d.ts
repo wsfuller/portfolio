@@ -9,6 +9,37 @@ declare module 'styled-components' {
     xxLarge: number;
   }
 
+  export interface TransitionSpeeds {
+    xFast: string;
+    fast: string;
+    default: string;
+    slow: string;
+    xSlow: string;
+  }
+
+  export interface BorderRadius {
+    small: string;
+    // Default
+    medium: string;
+    large: string;
+    round: string;
+  }
+
+  export interface ZIndex {
+    zero: number;
+    one: number;
+    two: number;
+    three: number;
+    four: number;
+    five: number;
+    six: number;
+    seven: number;
+    eight: number;
+    nine: number;
+    ten: number;
+    max: number;
+  }
+
   export interface Grayscale {
     gray0: string;
     gray100: string;
@@ -45,6 +76,9 @@ declare module 'styled-components' {
     baseFontSize: number;
     baseUnit: number;
     breakpoints: Breakpoints;
+    transitionSpeeds: TransitionSpeeds;
+    borderRadius: BorderRadius;
+    zIndex: ZIndex;
     maxContentWidth: number;
     appBarHeight: string;
     colors: {

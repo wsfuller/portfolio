@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "framer-motion": "^6.3.6",
+    "hex-rgb": "^5.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
