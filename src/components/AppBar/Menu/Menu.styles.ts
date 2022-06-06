@@ -49,4 +49,23 @@ const StyledMenuContent = styled(motion.div)`
   align-items: flex-start;
 `;
 
-export { StyledMenu, StyledMenuOverlay, StyledMenuContent };
+const StyledMenuLink = styled(motion.a)`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: ${({ theme }) => theme.color};
+  font-weight: ${({ theme }) => theme.tokens.typography.primary.weights.light};
+  text-decoration: none;
+  padding: 0 ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
+  transition: background ${({ theme }) => theme.tokens.transitionSpeeds.default} ease-in-out;
+
+  &:hover {
+    background: ${({ theme }) =>
+      theme.isDarkMode
+        ? theme.tokens.colors.grayscale.gray200
+        : theme.tokens.colors.grayscale.gray950};
+  }
+`;
+
+export { StyledMenu, StyledMenuOverlay, StyledMenuContent, StyledMenuLink };

@@ -3,7 +3,7 @@ import { FiX } from 'react-icons/fi';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import MenuProps from './Menu.props';
-import { StyledMenu, StyledMenuOverlay, StyledMenuContent } from './Menu.styles';
+import { StyledMenu, StyledMenuOverlay, StyledMenuContent, StyledMenuLink } from './Menu.styles';
 import menuLinks from './menu-links';
 
 import Avatar from '../../Avatar';
@@ -86,14 +86,14 @@ const Menu: React.FC<MenuProps> = ({ isOpen, cycleMenu }) => {
               {/* end Section */}
               {/* Nav */}
               {menuLinks.map(({ name, to, id }) => (
-                <motion.a
+                <StyledMenuLink
                   key={id}
                   href={to}
                   whileHover={{ scale: 1.1 }}
                   variants={MENU_LINK_VARIANTS}
                 >
                   {name}
-                </motion.a>
+                </StyledMenuLink>
               ))}
             </StyledMenuContent>
           </StyledMenu>

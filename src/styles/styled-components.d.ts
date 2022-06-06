@@ -68,7 +68,11 @@ declare module 'styled-components' {
   export interface Typography {
     family: string;
     weights: {
-      default: number;
+      thin?: number;
+      light?: number;
+      normal: number;
+      semiBold?: number;
+      bold?: number;
     };
   }
 
@@ -96,6 +100,7 @@ declare module 'styled-components' {
 
   export interface DefaultTheme {
     mode: string;
+    isDarkMode: boolean;
     tokens: ThemeFoundations;
     body: string;
     color: string;
