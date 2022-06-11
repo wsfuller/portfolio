@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import MenuProps from './Menu.props';
 import { StyledMenu, StyledMenuOverlay, StyledMenuContent, StyledMenuLink } from './Menu.styles';
 import menuLinks from './menu-links';
+import SocialMedia from './SocialMedia';
 
 import Avatar from '../../Avatar';
 import ActionButton from '../ActionButton';
@@ -83,6 +84,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, cycleMenu }) => {
               {/* Logo */}
               {/* Location */}
               {/* Social Media */}
+              <SocialMedia />
               {/* end Section */}
               {/* Nav */}
               {menuLinks.map(({ name, to, id }) => (
