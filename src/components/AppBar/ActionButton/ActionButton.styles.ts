@@ -5,8 +5,9 @@ const StyledActionButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
-  height: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
+  min-width: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
+  min-height: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
+  padding: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
   color: ${({ theme }) => theme.color};
   font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
   border: none;
@@ -19,10 +20,12 @@ const StyledActionButton = styled.button`
     flex: 0 0 auto;
   }
 
-  &:hover {
-    cursor: pointer;
-    color: ${({ theme }) => theme.body};
-    background: ${({ theme }) => hexRgb(`${theme.color}80`, { format: 'css' })};
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      cursor: pointer;
+      color: ${({ theme }) => theme.body};
+      background: ${({ theme }) => hexRgb(`${theme.color}80`, { format: 'css' })};
+    }
   }
 
   &:focus {

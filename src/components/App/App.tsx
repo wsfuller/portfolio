@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles, darkTheme, lightTheme } from '../../styles';
-
 import AppBar from '../AppBar';
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState('dark');
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  const themeToggle = () => (theme === 'light' ? setTheme('dark') : setTheme('light'));
+  const themeToggle = () => setIsDarkMode(!isDarkMode);
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
       <AppBar themeToggle={themeToggle} />
     </ThemeProvider>

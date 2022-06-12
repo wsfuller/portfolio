@@ -13,18 +13,16 @@ import logoDarkMode from '../../assets/images/logo/logo-dark-mode.svg';
 import logoLightMode from '../../assets/images/logo/logo-light-mode.svg';
 
 const AppBar: React.FC<AppBarProps> = ({ themeToggle }) => {
-  const theme = useTheme();
+  const { isDarkMode } = useTheme();
   const [isMenuOpen, cycleMenu] = useCycle(false, true);
 
   return (
     <Container>
       <StyledAppBar>
-        <img src={theme.mode === 'light' ? logoDarkMode : logoLightMode} alt="WSF Logo" />
+        <img src={isDarkMode ? logoDarkMode : logoLightMode} alt="WSF Logo" />
 
         <StyledAppBarActions>
-          <ActionButton onClick={themeToggle}>
-            {theme.mode === 'light' ? <FiMoon /> : <FiSun />}
-          </ActionButton>
+          <ActionButton onClick={themeToggle}>{isDarkMode ? <FiMoon /> : <FiSun />}</ActionButton>
           <ActionButton onClick={cycleMenu}>
             <FiMenu />
           </ActionButton>

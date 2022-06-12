@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import hexRgb from 'hex-rgb';
 
+import StyledAvatar from '../../Avatar/Avatar.styles';
+
 const StyledMenu = styled(motion.div)`
   position: fixed;
   top: 0;
@@ -49,4 +51,56 @@ const StyledMenuContent = styled(motion.div)`
   align-items: flex-start;
 `;
 
-export { StyledMenu, StyledMenuOverlay, StyledMenuContent };
+const StyledMenuItem = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const StyledMenuAvatar = styled(StyledAvatar)`
+  width: ${({ theme }) => theme.tokens.baseUnitsToRem(25)};
+  height: ${({ theme }) => theme.tokens.baseUnitsToRem(25)};
+  margin: ${({ theme }) => `0 auto ${theme.tokens.baseUnitsToRem(2)}`};
+`;
+
+const StyledMenuLink = styled(motion.a)`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: ${({ theme }) => theme.color};
+  font-weight: ${({ theme }) => theme.tokens.typography.primary.weights.light};
+  text-decoration: none;
+  padding: 0 ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
+  transition: background ${({ theme }) => theme.tokens.transitionSpeeds.default} ease-in-out;
+
+  &:hover {
+    background: ${({ theme }) =>
+      theme.isDarkMode
+        ? theme.tokens.colors.grayscale.gray200
+        : theme.tokens.colors.grayscale.gray950};
+  }
+`;
+
+const StyledLocation = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+  font-weight: ${({ theme }) => theme.tokens.typography.primary.weights.thin};
+  white-space: nowrap;
+
+  & svg {
+    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+  }
+`;
+
+export {
+  StyledMenu,
+  StyledMenuOverlay,
+  StyledMenuContent,
+  StyledMenuItem,
+  StyledMenuAvatar,
+  StyledMenuLink,
+  StyledLocation,
+};

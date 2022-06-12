@@ -95,13 +95,14 @@ export const themeFoundations: ThemeFoundations = {
     primary: {
       family: "'Roboto', sans-serif",
       weights: {
-        default: 100,
+        light: 300,
+        normal: 400,
       },
     },
     alternate: {
       family: "'Roboto Slab', serif",
       weights: {
-        default: 100,
+        normal: 100,
       },
     },
   },
@@ -111,6 +112,7 @@ export const themeFoundations: ThemeFoundations = {
 
 export const darkTheme: DefaultTheme = {
   mode: 'dark',
+  isDarkMode: true,
   tokens: themeFoundations,
   body: grayscale.gray100,
   color: grayscale.gray1000,
@@ -118,6 +120,7 @@ export const darkTheme: DefaultTheme = {
 
 export const lightTheme: DefaultTheme = {
   mode: 'light',
+  isDarkMode: false,
   tokens: themeFoundations,
   body: grayscale.gray1000,
   color: grayscale.gray100,
