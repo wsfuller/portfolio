@@ -91,7 +91,7 @@ const StyledLocation = styled(motion.div)`
   white-space: nowrap;
 
   & svg {
-    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(0.5)};
   }
 `;
 

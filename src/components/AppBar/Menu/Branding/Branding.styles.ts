@@ -17,7 +17,7 @@ const StyledLogo = styled.img`
 const StyledName = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(3.5)};
   white-space: nowrap;
 `;
