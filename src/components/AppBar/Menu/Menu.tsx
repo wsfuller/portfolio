@@ -26,11 +26,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, cycleMenu }) => {
   const DURATION = 0.5;
   const MENU_DELAY = 0.5;
   const MENU_OVERLAY_DELAY = 0.75;
-  const MENU_ITEM_DELAY = 0.35;
-
-  const MENU_HEADER_TRANSITION = {
-    transition: { delay: MENU_ITEM_DELAY, duration: DURATION },
-  };
 
   const MENU_ITEM_VARIANTS = {
     closed: {
@@ -86,11 +81,12 @@ const Menu: React.FC<MenuProps> = ({ isOpen, cycleMenu }) => {
               }}
               animate={{
                 opacity: 1,
-                transition: MENU_HEADER_TRANSITION,
               }}
               exit={{
                 opacity: 0,
-                transition: MENU_HEADER_TRANSITION,
+                transition: {
+                  delay: MENU_DELAY,
+                },
               }}
             >
               <ActionButton onClick={cycleMenu}>

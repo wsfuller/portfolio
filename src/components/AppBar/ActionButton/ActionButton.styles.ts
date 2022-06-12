@@ -20,10 +20,12 @@ const StyledActionButton = styled.button`
     flex: 0 0 auto;
   }
 
-  &:hover {
-    cursor: pointer;
-    color: ${({ theme }) => theme.body};
-    background: ${({ theme }) => hexRgb(`${theme.color}80`, { format: 'css' })};
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      cursor: pointer;
+      color: ${({ theme }) => theme.body};
+      background: ${({ theme }) => hexRgb(`${theme.color}80`, { format: 'css' })};
+    }
   }
 
   &:focus {
