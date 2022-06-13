@@ -32,7 +32,7 @@ const StyledMenu = styled(motion.div)`
   }
 `;
 
-const StyledMenuOverlay = styled(motion.div)`
+const StyledMenuOverlay = styled(motion.a)`
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +43,7 @@ const StyledMenuOverlay = styled(motion.div)`
   z-index: ${({ theme }) => theme.tokens.zIndex.ten - 1};
   background: ${({ theme }) =>
     hexRgb(`${theme.tokens.colors.grayscale.gray0}80`, { format: 'css' })};
+  cursor: default;
 `;
 
 const StyledMenuContent = styled(motion.div)`

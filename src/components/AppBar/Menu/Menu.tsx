@@ -136,6 +136,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, cycleMenu }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { delay: MENU_OVERLAY_DELAY } }}
             variants={MENU_ITEM_VARIANTS}
+            onClick={cycleMenu}
           />
         </>
       )}
