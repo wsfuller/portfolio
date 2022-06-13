@@ -84,13 +84,16 @@ const StyledMenuLink = styled(motion.a)`
 
 const StyledLocation = styled(motion.div)`
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
+  font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(3)};
   font-weight: ${({ theme }) => theme.tokens.typography.primary.weights.thin};
   white-space: nowrap;
 
   & svg {
+    font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(3.5)};
     margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(0.5)};
   }
 `;

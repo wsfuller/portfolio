@@ -5,7 +5,7 @@ const StyledBranding = styled(motion.div)`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(3)};
 `;
 
 const StyledLogo = styled.img`
