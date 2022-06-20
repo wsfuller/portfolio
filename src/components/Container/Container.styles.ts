@@ -5,7 +5,7 @@ const StyledContainer = styled.div`
   max-width: ${({ theme }) => `${theme.tokens.maxContentWidth}px`};
   height: auto;
   margin: auto;
-  padding: 0 ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+  padding: 0 ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
 `;
 
 export default StyledContainer;

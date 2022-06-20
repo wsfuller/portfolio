@@ -6,6 +6,7 @@ const StyledBranding = styled(motion.div)`
   justify-content: center;
   width: 100%;
   margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(3)};
+  line-height: normal;
 `;
 
 const StyledLogo = styled.img`
@@ -23,7 +24,7 @@ const StyledName = styled.div`
 `;
 
 const StyledTag = styled.span`
-  font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(2.5)};
+  font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(3)};
 `;
 
 export { StyledBranding, StyledLogo, StyledName, StyledTag };

@@ -7,7 +7,6 @@ import AppBarProps from './AppBar.props';
 import { StyledAppBar, StyledAppBarActions } from './AppBar.styles';
 import ActionButton from './ActionButton';
 import Menu from './Menu';
-import Container from '../Container';
 
 import logoDarkMode from '../../assets/images/logo/logo-dark-mode.svg';
 import logoLightMode from '../../assets/images/logo/logo-light-mode.svg';
@@ -17,7 +16,7 @@ const AppBar: React.FC<AppBarProps> = ({ themeToggle }) => {
   const [isMenuOpen, cycleMenu] = useCycle(false, true);
 
   return (
-    <Container>
+    <>
       <StyledAppBar>
         <img src={isDarkMode ? logoDarkMode : logoLightMode} alt="WSF Logo" />
 
@@ -29,7 +28,7 @@ const AppBar: React.FC<AppBarProps> = ({ themeToggle }) => {
         </StyledAppBarActions>
       </StyledAppBar>
       <Menu isOpen={isMenuOpen} cycleMenu={cycleMenu} />
-    </Container>
+    </>
   );
 };
 

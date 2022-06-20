@@ -14,6 +14,7 @@ const StyledMenu = styled(motion.div)`
   box-shadow: ${({ theme }) =>
     hexRgb(`${theme.tokens.colors.grayscale.gray100}1A`, { format: 'css' })};
   z-index: ${({ theme }) => theme.tokens.zIndex.max};
+  overflow-x: hidden;
   overflow-y: auto;
 
   header {

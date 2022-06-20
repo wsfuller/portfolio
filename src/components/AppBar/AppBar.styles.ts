@@ -6,9 +6,13 @@ const StyledAppBar = styled.header`
   justify-content: space-between;
   width: 100%;
   height: ${({ theme }) => theme.tokens.appBarHeight};
-  padding: 0 ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
+  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
   color: ${({ theme }) => theme.color};
   background: ${({ theme }) => theme.body};
+
+  @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.large}px`}) {
+    margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(16)};
+  }
 `;
 
 const StyledAppBarActions = styled.div`

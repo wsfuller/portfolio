@@ -102,7 +102,8 @@ export const themeFoundations: ThemeFoundations = {
     alternate: {
       family: "'Roboto Slab', serif",
       weights: {
-        normal: 100,
+        light: 300,
+        normal: 400,
       },
     },
   },
