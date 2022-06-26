@@ -19,4 +19,8 @@ type LinkProps = {
   target?: string;
 };
 
-export type { AnchorAttributes, LinkProps };
+type StyledLinkProps = {
+  duration: number;
+};
+
+export type { AnchorAttributes, LinkProps, StyledLinkProps };

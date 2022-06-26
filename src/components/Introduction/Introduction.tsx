@@ -19,7 +19,7 @@ const Introduction: React.FC = () => (
     {/* Body */}
     <StyledBody>
       I&apos;m a software engineer based out of Seattle, WA. I specialize in building frontend
-      applications and experiences. Currently I&apos;m a Senior Software Engineer at{' '}
+      applications and experiences. Currently I&apos;m a Senior Software Engineer at
       <Link href="https://ted.com" target="blank">
         TED Conferences
       </Link>
