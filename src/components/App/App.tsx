@@ -6,6 +6,7 @@ import { GlobalStyles, darkTheme, lightTheme } from '../../styles';
 import Container from '../Container';
 import AppBar from '../AppBar';
 import Introduction from '../Introduction';
+import Footer from '../Footer';
 
 const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <Container>
         <AppBar themeToggle={themeToggle} />
         <Introduction />
+        <Footer />
       </Container>
     </ThemeProvider>
   );
