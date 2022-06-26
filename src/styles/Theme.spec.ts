@@ -1,7 +1,7 @@
-import { themeFoundations } from './Theme';
+import { themeUtils } from './Theme';
 
 test('baseUnitsToRem returns correctly', () => {
-  const { baseUnitsToRem } = themeFoundations;
+  const { baseUnitsToRem } = themeUtils;
 
   expect(baseUnitsToRem(0)).toEqual('0rem');
   expect(baseUnitsToRem(2)).toEqual('0.5rem');
@@ -13,7 +13,7 @@ test('baseUnitsToRem returns correctly', () => {
 });
 
 test('pxToRem returns correctly', () => {
-  const { pxToRem } = themeFoundations;
+  const { pxToRem } = themeUtils;
 
   expect(pxToRem(0)).toEqual('0rem');
   expect(pxToRem(1)).toEqual('0.0625rem');

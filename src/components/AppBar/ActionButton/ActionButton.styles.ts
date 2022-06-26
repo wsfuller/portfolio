@@ -5,11 +5,11 @@ const StyledActionButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
-  min-height: ${({ theme }) => theme.tokens.baseUnitsToRem(8)};
-  padding: ${({ theme }) => theme.tokens.baseUnitsToRem(2)};
+  min-width: ${({ theme }) => theme.utils.baseUnitsToRem(8)};
+  min-height: ${({ theme }) => theme.utils.baseUnitsToRem(8)};
+  padding: ${({ theme }) => theme.utils.baseUnitsToRem(2)};
   color: ${({ theme }) => theme.color};
-  font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
+  font-size: ${({ theme }) => theme.utils.baseUnitsToRem(4)};
   border: none;
   border-radius: ${({ theme }) => `${theme.tokens.borderRadius.small}`};
   outline: none;
