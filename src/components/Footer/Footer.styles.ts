@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
   }
 
   span {
-    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(1)};
+    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(0.25)};
   }
 `;
 
