@@ -6,6 +6,7 @@ import { GlobalStyles, darkTheme, lightTheme } from '../../styles';
 import Container from '../Container';
 import AppBar from '../AppBar';
 import Introduction from '../Introduction';
+import Projects from '../Projects';
 import Footer from '../Footer';
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <Container>
         <AppBar themeToggle={themeToggle} />
         <Introduction />
+        <Projects />
         <Footer />
       </Container>
     </ThemeProvider>
