@@ -30,6 +30,11 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${({ theme }) => theme.utils.pxToRem(18)};
     }
   }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
 `;
 
 export default GlobalStyles;

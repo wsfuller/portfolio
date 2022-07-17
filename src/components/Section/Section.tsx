@@ -3,8 +3,8 @@ import React from 'react';
 import SectionProps from './Section.props';
 import { StyledSection, StyledTitle } from './Section.styles';
 
-const Section: React.FC<SectionProps> = ({ children, title }) => (
-  <StyledSection>
+const Section: React.FC<SectionProps> = ({ children, title, testid }) => (
+  <StyledSection data-testid={testid}>
     <StyledTitle>{title}</StyledTitle>
     {children}
   </StyledSection>
