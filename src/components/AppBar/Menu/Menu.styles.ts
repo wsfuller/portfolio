@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import hexRgb from 'hex-rgb';
+import hexToRgba from 'hex-to-rgba';
 
 import StyledAvatar from '../../Avatar/Avatar.styles';
 
@@ -11,8 +11,7 @@ const StyledMenu = styled(motion.div)`
   height: 100%;
   color: ${({ theme }) => theme.color};
   background: ${({ theme }) => theme.body};
-  box-shadow: ${({ theme }) =>
-    hexRgb(`${theme.tokens.colors.grayscale.gray100}1A`, { format: 'css' })};
+  box-shadow: ${({ theme }) => hexToRgba(theme.tokens.colors.grayscale.gray100, 0.5)};
   z-index: ${({ theme }) => theme.tokens.zIndex.max};
   overflow-x: hidden;
   overflow-y: auto;
@@ -42,8 +41,7 @@ const StyledMenuOverlay = styled(motion.a)`
   width: 100vw;
   height: 100vh;
   z-index: ${({ theme }) => theme.tokens.zIndex.ten - 1};
-  background: ${({ theme }) =>
-    hexRgb(`${theme.tokens.colors.grayscale.gray0}80`, { format: 'css' })};
+  background: ${({ theme }) => hexToRgba(`${theme.tokens.colors.grayscale.gray0}`, 0.5)};
   cursor: default;
 `;
 
