@@ -17,7 +17,7 @@ const AppBar: React.FC<AppBarProps> = ({ themeToggle }) => {
 
   return (
     <>
-      <StyledAppBar>
+      <StyledAppBar data-testid="app--appBar">
         <img src={isDarkMode ? logoDarkMode : logoLightMode} alt="WSF Logo" />
 
         <StyledAppBarActions>
