@@ -10,8 +10,9 @@ const StyledCard = styled.div`
     theme.isDarkMode
       ? theme.tokens.colors.grayscale.gray200
       : theme.tokens.colors.grayscale.gray1000};
-  box-shadow: ${({ theme }) =>
-    `0px 10px 20px 0px ${hexToRgba(theme.tokens.colors.grayscale.gray0, 0.15)}`};
+  /* box-shadow: ${({ theme }) =>
+    `0px 10px 20px 0px ${hexToRgba(theme.tokens.colors.grayscale.gray0, 0.15)}`}; */
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 `;
 
 const StyledHeader = styled.header`
@@ -30,6 +31,7 @@ const StyledTitle = styled.h3`
 `;
 
 const StyledDescription = styled.p`
+  min-height: 60px;
   font-size: 16px;
 `;
 
