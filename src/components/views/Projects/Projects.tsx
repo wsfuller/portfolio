@@ -1,10 +1,10 @@
 import React from 'react';
 import { RiCodeBoxLine } from 'react-icons/ri';
 
-import projects from '../../assets/data/projects';
+import projects from '../../../assets/data/projects';
 import StyledProjects from './Projects.styles';
-import Section from '../Section';
-import Card from '../Card';
+import Section from '../../Section';
+import Card from '../../Card';
 
 const Projects: React.FC = () => (
   <Section title="Projects" id="projects">
