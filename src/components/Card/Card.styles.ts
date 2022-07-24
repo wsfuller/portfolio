@@ -1,12 +1,17 @@
 import styled from 'styled-components';
+import hexToRgba from 'hex-to-rgba';
 
 const StyledCard = styled.div`
   width: 100%;
   height: auto;
   padding: ${({ theme }) => theme.utils.baseUnitsToRem(4)};
   border-radius: ${({ theme }) => theme.tokens.borderRadius.medium};
-  background: ${({ theme }) => theme.tokens.colors.grayscale.gray200};
-  box-shadow: ${({ theme }) => `0px 10px 20px 0px ${theme.tokens.colors.grayscale.gray0}`};
+  background: ${({ theme }) =>
+    theme.isDarkMode
+      ? theme.tokens.colors.grayscale.gray200
+      : theme.tokens.colors.grayscale.gray1000};
+  box-shadow: ${({ theme }) =>
+    `0px 10px 20px 0px ${hexToRgba(theme.tokens.colors.grayscale.gray0, 0.15)}`};
 `;
 
 const StyledHeader = styled.header`
