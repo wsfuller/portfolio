@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import hexRgb from 'hex-rgb';
+import hexToRgba from 'hex-to-rgba';
 
 import StyledAvatar from '../../Avatar/Avatar.styles';
 
@@ -11,8 +11,7 @@ const StyledMenu = styled(motion.div)`
   height: 100%;
   color: ${({ theme }) => theme.color};
   background: ${({ theme }) => theme.body};
-  box-shadow: ${({ theme }) =>
-    hexRgb(`${theme.tokens.colors.grayscale.gray100}1A`, { format: 'css' })};
+  box-shadow: ${({ theme }) => hexToRgba(theme.tokens.colors.grayscale.gray100, 0.5)};
   z-index: ${({ theme }) => theme.tokens.zIndex.max};
   overflow-x: hidden;
   overflow-y: auto;
@@ -27,8 +26,8 @@ const StyledMenu = styled(motion.div)`
     justify-content: flex-end;
     width: auto;
     height: ${({ theme }) => theme.tokens.appBarHeight};
-    margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
-    padding: ${({ theme }) => `0 ${theme.tokens.baseUnitsToRem(4)}`};
+    margin-bottom: ${({ theme }) => theme.utils.baseUnitsToRem(4)};
+    padding: ${({ theme }) => `0 ${theme.utils.baseUnitsToRem(4)}`};
     background: ${({ theme }) => theme.body};
   }
 `;
@@ -42,8 +41,7 @@ const StyledMenuOverlay = styled(motion.a)`
   width: 100vw;
   height: 100vh;
   z-index: ${({ theme }) => theme.tokens.zIndex.ten - 1};
-  background: ${({ theme }) =>
-    hexRgb(`${theme.tokens.colors.grayscale.gray0}80`, { format: 'css' })};
+  background: ${({ theme }) => hexToRgba(`${theme.tokens.colors.grayscale.gray0}`, 0.5)};
   cursor: default;
 `;
 
@@ -60,9 +58,9 @@ const StyledMenuItem = styled(motion.div)`
 `;
 
 const StyledMenuAvatar = styled(StyledAvatar)`
-  width: ${({ theme }) => theme.tokens.baseUnitsToRem(25)};
-  height: ${({ theme }) => theme.tokens.baseUnitsToRem(25)};
-  margin: ${({ theme }) => `0 auto ${theme.tokens.baseUnitsToRem(2)}`};
+  width: ${({ theme }) => theme.utils.baseUnitsToRem(25)};
+  height: ${({ theme }) => theme.utils.baseUnitsToRem(25)};
+  margin: ${({ theme }) => `0 auto ${theme.utils.baseUnitsToRem(2)}`};
 `;
 
 const StyledMenuLink = styled(motion.a)`
@@ -73,7 +71,7 @@ const StyledMenuLink = styled(motion.a)`
   color: ${({ theme }) => theme.color};
   font-weight: ${({ theme }) => theme.tokens.typography.primary.weights.light};
   text-decoration: none;
-  padding: 0 ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
+  padding: 0 ${({ theme }) => theme.utils.baseUnitsToRem(4)};
   transition: background ${({ theme }) => theme.tokens.transitionSpeeds.default} ease-in-out;
 
   &:hover {
@@ -89,14 +87,14 @@ const StyledLocation = styled(motion.div)`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: ${({ theme }) => theme.tokens.baseUnitsToRem(4)};
-  font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(3)};
+  margin-bottom: ${({ theme }) => theme.utils.baseUnitsToRem(4)};
+  font-size: ${({ theme }) => theme.utils.baseUnitsToRem(3)};
   font-weight: ${({ theme }) => theme.tokens.typography.primary.weights.thin};
   white-space: nowrap;
 
   & svg {
-    font-size: ${({ theme }) => theme.tokens.baseUnitsToRem(3.5)};
-    margin-right: ${({ theme }) => theme.tokens.baseUnitsToRem(0.5)};
+    font-size: ${({ theme }) => theme.utils.baseUnitsToRem(3.5)};
+    margin-right: ${({ theme }) => theme.utils.baseUnitsToRem(0.5)};
   }
 `;
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import hexToRgba from 'hex-to-rgba';
 
-const StyledActionButton = styled.button`
+const StyledButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -33,4 +33,4 @@ const StyledActionButton = styled.button`
   }
 `;
 
-export default StyledActionButton;
+export default StyledButton;

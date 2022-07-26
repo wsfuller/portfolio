@@ -93,6 +93,9 @@ declare module 'styled-components' {
       primary: Typography;
       alternate?: Typography;
     };
+  }
+
+  export interface ThemeUtils {
     pxToRem: (value: number) => string;
     // Simplify theme base unit conversion to relative units
     baseUnitsToRem: (value: number) => string;
@@ -102,6 +105,7 @@ declare module 'styled-components' {
     mode: string;
     isDarkMode: boolean;
     tokens: ThemeFoundations;
+    utils: ThemeUtils;
     body: string;
     color: string;
   }

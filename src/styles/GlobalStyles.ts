@@ -20,15 +20,20 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    font-size: ${({ theme }) => theme.tokens.pxToRem(14)};
+    font-size: ${({ theme }) => theme.utils.pxToRem(14)};
 
     @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.medium}px`}) {
-      font-size: ${({ theme }) => theme.tokens.pxToRem(16)};
+      font-size: ${({ theme }) => theme.utils.pxToRem(16)};
     }
 
     @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.large}px`}) {
-      font-size: ${({ theme }) => theme.tokens.pxToRem(18)};
+      font-size: ${({ theme }) => theme.utils.pxToRem(18)};
     }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
   }
 `;
 

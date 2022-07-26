@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Redirect, withRouter } from 'react-router-dom';
 
-import { Details } from '../components/Projects';
-import Project from '../components/Projects/Details/detailsData';
+import { Details } from '../components/views/Projects';
+import Project from '../components/views/Projects/Details/detailsData';
 
 import camelCase from '../utils/camelCase';
 

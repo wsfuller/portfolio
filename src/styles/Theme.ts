@@ -1,6 +1,7 @@
 import {
   DefaultTheme,
   ThemeFoundations,
+  ThemeUtils,
   Breakpoints,
   TransitionSpeeds,
   ZIndex,
@@ -107,6 +108,9 @@ export const themeFoundations: ThemeFoundations = {
       },
     },
   },
+};
+
+export const themeUtils: ThemeUtils = {
   baseUnitsToRem,
   pxToRem,
 };
@@ -115,6 +119,7 @@ export const darkTheme: DefaultTheme = {
   mode: 'dark',
   isDarkMode: true,
   tokens: themeFoundations,
+  utils: themeUtils,
   body: grayscale.gray100,
   color: grayscale.gray1000,
 };
@@ -123,6 +128,7 @@ export const lightTheme: DefaultTheme = {
   mode: 'light',
   isDarkMode: false,
   tokens: themeFoundations,
+  utils: themeUtils,
   body: grayscale.gray1000,
   color: grayscale.gray100,
 };

@@ -5,7 +5,7 @@ import type { StyledLinkProps } from './Link.props';
 
 const StyledLink = styled(motion.a)<StyledLinkProps>`
   display: inline-block;
-  margin: ${({ theme }) => `0 ${theme.tokens.pxToRem(5)}`};
+  margin: ${({ theme }) => `0 ${theme.utils.pxToRem(5)}`};
   color: ${({ theme: { tokens, isDarkMode } }) =>
     isDarkMode ? tokens.colors.branding.primaryMinus100 : tokens.colors.branding.primaryMinus350};
   text-decoration: none;
