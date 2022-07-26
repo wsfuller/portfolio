@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledSection = styled.section`
   width: 100%;
   height: auto;
-  padding: 40px 0;
+  padding: ${({ theme }) => `${theme.utils.baseUnitsToRem(10)} 0`};
 `;
 
 const StyledTitle = styled.div`

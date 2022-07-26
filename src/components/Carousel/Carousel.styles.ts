@@ -20,7 +20,7 @@ const StyledSwiper = styled(Swiper)`
   }
 
   .swiper-pagination-bullet {
-    ${({ theme }) => theme.isDarkMode && `background: ${theme.color} `};
+    ${({ theme }) => theme.isDarkMode && `background: ${theme.color}`};
   }
 
   .swiper-pagination-bullet-active {

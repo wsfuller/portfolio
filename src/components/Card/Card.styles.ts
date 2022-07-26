@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import hexToRgba from 'hex-to-rgba';
 
 const StyledCard = styled.div`
   width: 100%;
@@ -10,8 +9,6 @@ const StyledCard = styled.div`
     theme.isDarkMode
       ? theme.tokens.colors.grayscale.gray200
       : theme.tokens.colors.grayscale.gray1000};
-  /* box-shadow: ${({ theme }) =>
-    `0px 10px 20px 0px ${hexToRgba(theme.tokens.colors.grayscale.gray0, 0.15)}`}; */
   filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 `;
 
@@ -21,25 +18,25 @@ const StyledHeader = styled.header`
 `;
 
 const StyledIcon = styled.div`
-  font-size: 28px;
+  font-size: ${({ theme }) => theme.utils.baseUnitsToRem(7)};
 `;
 
 const StyledTitle = styled.h3`
   margin-bottom: ${({ theme }) => theme.utils.baseUnitsToRem(2)};
   font-family: ${({ theme }) => theme.tokens.typography.alternate?.family};
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.utils.baseUnitsToRem(6)};
 `;
 
 const StyledDescription = styled.p`
-  min-height: 60px;
-  font-size: 16px;
+  min-height: ${({ theme }) => theme.utils.baseUnitsToRem(15)};
+  font-size: ${({ theme }) => theme.utils.baseUnitsToRem(4)};
 `;
 
 const StyledToolList = styled.ul`
   display: flex;
   width: 100%;
   font-family: ${({ theme }) => theme.tokens.typography.alternate?.family};
-  font-size: 10px;
+  font-size: ${({ theme }) => theme.utils.baseUnitsToRem(2.5)};
 
   @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.large}px`}) {
     font-size: ${({ theme }) => theme.utils.baseUnitsToRem(3)};
