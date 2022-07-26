@@ -6,42 +6,41 @@ const StyledSection = styled.section`
   padding: 40px 0;
 `;
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.div`
+  position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 32px;
+  margin-bottom: ${({ theme }) => theme.utils.baseUnitsToRem(4)};
   font-family: ${({ theme }) => theme.tokens.typography.alternate?.family};
-  font-size: 32px;
   font-weight: ${({ theme }) => theme.tokens.typography.alternate?.weights.light};
+
+  @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.medium}px`}) {
+    margin-bottom: ${({ theme }) => theme.utils.baseUnitsToRem(8)};
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    z-index: ${({ theme }) => theme.tokens.zIndex.one};
+    width: 100%;
+    height: 2px;
+    background: ${({ theme }) => theme.tokens.colors.grayscale.gray500};
+    opacity: 0.25;
+  }
+
+  h2 {
+    position: relative;
+    z-index: ${({ theme }) => theme.tokens.zIndex.two};
+    width: min-content;
+    padding-right: ${({ theme }) => theme.utils.baseUnitsToRem(2)};
+    font-size: ${({ theme }) => theme.utils.baseUnitsToRem(5)};
+    background: ${({ theme }) => theme.body};
+
+    @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.medium}px`}) {
+      font-size: ${({ theme }) => theme.utils.baseUnitsToRem(8)};
+    }
+  }
 `;
 
 export { StyledSection, StyledTitle };
-
-// const SectionStyles = makeStyles(theme => ({
-//   section: {
-//     width: '100%',
-//     height: '100%',
-//     paddingTop: theme.pxToRem(40),
-//     paddingBottom: theme.pxToRem(40),
-//     [theme.breakpoints.up('md')]: {
-//       paddingTop: theme.pxToRem(60),
-//       paddingBottom: theme.pxToRem(60)
-//     }
-//   },
-//   container: {
-//     textAlign: 'center'
-//   },
-//   title: {
-//     display: 'flex',
-//     'flex-direction': 'column',
-//     position: 'relative'
-//   },
-//   titleUnderline: {
-//     width: theme.pxToRem(80),
-//     height: theme.pxToRem(3),
-//     margin: `${theme.pxToRem(8)} auto ${theme.pxToRem(40)}`,
-//     'background-color': theme.colors.primary.default
-//   }
-// }));
-
-// export default SectionStyles;

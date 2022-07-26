@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiGithubBadge } from 'react-icons/di';
-import { FiExternalLink } from 'react-icons/fi';
+import { IoLink } from 'react-icons/io5';
 
 import CardProps from './Card.props';
 import {
@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({ icon, title, description, tools, links }) =
     </StyledToolList>
     <StyledFooter>
       <Button as="a" anchorAttributes={{ href: links.demo }}>
-        <FiExternalLink />
+        <IoLink />
       </Button>
       <Button as="a" anchorAttributes={{ href: links.github }}>
         <DiGithubBadge />

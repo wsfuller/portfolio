@@ -5,10 +5,11 @@ const StyledSwiper = styled(Swiper)`
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: ${({ theme }) =>
-    `${theme.utils.baseUnitsToRem(3)} ${theme.utils.baseUnitsToRem(2)} ${theme.utils.baseUnitsToRem(
-      8
-    )}`};
+  padding: ${({ theme }) => `0 ${theme.utils.baseUnitsToRem(2)} ${theme.utils.baseUnitsToRem(8)}`};
+
+  @media screen and (min-width: ${({ theme }) => `${theme.tokens.breakpoints.medium}px`}) {
+    padding-top: ${({ theme }) => theme.utils.baseUnitsToRem(3)};
+  }
 
   .swiper-wrapper {
     min-height: 250px;
